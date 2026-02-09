@@ -1,0 +1,277 @@
+---
+installer: oracle-skills-cli v1.5.73
+name: rrr
+description: v1.5.73 L-SKLL | Create session retrospective with AI diary and lessons learned. Use when user says "rrr", "retrospective", "wrap up session", "session summary", or at end of work session.
+---
+
+# /rrr
+
+> "Reflect to grow, document to remember."
+
+```
+/rrr              # Quick retro, main agent
+/rrr --detail     # Full template, main agent
+/rrr --dig        # Reconstruct past timeline from session .jsonl
+/rrr --deep       # 5 parallel agents (read DEEP.md)
+```
+
+**NEVER spawn subagents or use the Task tool. Only `--deep` may use subagents.**
+**`/rrr`, `/rrr --detail`, and `/rrr --dig` = main agent only. Zero subagents. Zero Task calls.**
+
+---
+
+## /rrr (Default)
+
+### 1. Gather
+
+```bash
+date "+%H:%M %Z (%A %d %B %Y)"
+git log --oneline -10 && git diff --stat HEAD~5
+```
+
+### 1.5. Read Pulse Context (optional)
+
+```bash
+cat ψ/data/pulse/project.json 2>/dev/null
+cat ψ/data/pulse/heartbeat.json 2>/dev/null
+```
+
+If files don't exist, skip silently. Never fail because pulse data is missing.
+
+If found, extract:
+- From `project.json`: `totalSessions`, `avgMessagesPerSession`, `sizes` (to categorize current session), `branches` (activity on current branch)
+- From `heartbeat.json`: `streak.days` (momentum), `weekChange` (acceleration/slowdown), `today` (today's activity so far)
+
+### 2. Write Retrospective
+
+**Path**: `ψ/memory/retrospectives/YYYY-MM/DD/HH.MM_slug.md`
+
+```bash
+mkdir -p "ψ/memory/retrospectives/$(date +%Y-%m/%d)"
+```
+
+Write immediately, no prompts. If pulse data was found, weave it into the narrative (don't add a separate dashboard). Include:
+- Session Summary — if pulse data exists, add one line: "Session #X of Y in this project (Z-day streak)"
+- Timeline
+- Files Modified
+- AI Diary (150+ words, first-person) — if pulse data exists, reference momentum naturally: "in a week with +X% messaging velocity" or "on day N of an unbroken streak"
+- Honest Feedback (100+ words, 3 friction points)
+- Lessons Learned
+- Next Steps
+
+### 3. Write Lesson Learned
+
+**Path**: `ψ/memory/learnings/YYYY-MM-DD_slug.md`
+
+### 4. Oracle Sync
+
+```
+oracle_learn({ pattern: [lesson content], concepts: [tags], source: "rrr: REPO" })
+```
+
+### 5. Commit
+
+```bash
+git add ψ/memory/retrospectives/ ψ/memory/learnings/
+git commit -m "rrr: [slug]"
+```
+
+---
+
+## /rrr --detail
+
+Same flow as default but use full template:
+
+```markdown
+# Session Retrospective
+
+**Session Date**: YYYY-MM-DD
+**Start/End**: HH:MM - HH:MM GMT+7
+**Duration**: ~X min
+**Focus**: [description]
+**Type**: [Feature | Bug Fix | Research | Refactoring]
+
+## Session Summary
+(If pulse data exists, add: "Session #X of Y in this project (Z-day streak)")
+## Timeline
+## Files Modified
+## Key Code Changes
+## Architecture Decisions
+## AI Diary (150+ words, vulnerable, first-person)
+(If pulse data exists, reference momentum: velocity changes, streak length)
+## What Went Well
+## What Could Improve
+## Blockers & Resolutions
+## Honest Feedback (100+ words, 3 friction points)
+## Lessons Learned
+## Next Steps
+## Metrics (commits, files, lines)
+### Pulse Context (if pulse data exists)
+Project: X sessions | Avg: Y msgs/session | This session: Z msgs (category)
+Streak: N days | Week trend: ±X% msgs | Branch: main (N sessions)
+```
+
+Then steps 3-5 same as default.
+
+---
+
+## /rrr --dig
+
+**Reconstruct past session timeline by scanning .jsonl files. No subagents.**
+
+Digs into `~/.claude/projects/` session data to build a timeline of recent sessions — filling gaps that git log alone can't show (conversations, research, abandoned branches, sidechains).
+
+### 1. Gather + Scan Sessions
+
+```bash
+date "+%H:%M %Z (%A %d %B %Y)"
+git log --oneline -10 && git diff --stat HEAD~5
+```
+
+Encode `pwd`: replace `/` with `-`, prepend `-`.
+
+Run this python3 script to extract structured data from the 10 most recent `.jsonl` files:
+
+```bash
+export PROJECT_DIR="$HOME/.claude/projects/$(pwd | sed 's|/|-|g; s|^|--|; s|^-||')"
+python3 << 'PYEOF'
+import json, os, glob
+from datetime import datetime, timezone, timedelta
+
+project_dir = os.environ['PROJECT_DIR']
+bkk = timedelta(hours=7)
+
+# Get 10 most recent .jsonl files by mtime
+files = sorted(glob.glob(os.path.join(project_dir, '*.jsonl')),
+               key=lambda f: os.path.getmtime(f), reverse=True)[:10]
+
+# Load sessions-index for summaries
+index_map = {}
+try:
+    with open(os.path.join(project_dir, 'sessions-index.json')) as f:
+        for e in json.load(f).get('entries', []):
+            index_map[e['sessionId']] = e
+except: pass
+
+sessions = []
+for fp in files:
+    sid = os.path.basename(fp).replace('.jsonl', '')
+    first_ts = last_ts = None
+    branch = summary_text = None
+    is_sidechain = False
+    real_human = []
+    assistant_count = 0
+
+    with open(fp) as fh:
+        for line in fh:
+            try: obj = json.loads(line)
+            except: continue
+            ts = obj.get('timestamp')
+            if ts:
+                if not first_ts or ts < first_ts: first_ts = ts
+                if not last_ts or ts > last_ts: last_ts = ts
+            t = obj.get('type', '')
+            if t == 'summary':
+                summary_text = obj.get('summary', '')
+                branch = obj.get('gitBranch', '')
+                is_sidechain = obj.get('isSidechain', False)
+            elif t == 'assistant':
+                assistant_count += 1
+            elif t == 'user':
+                msg = obj.get('message', {})
+                content = msg.get('content', [])
+                text = ''
+                if isinstance(content, list):
+                    for c in content:
+                        if isinstance(c, dict) and c.get('type') == 'text':
+                            text = c.get('text', '').strip()
+                            break
+                elif isinstance(content, str):
+                    text = content.strip()
+                if text and len(text) > 5 and not text.startswith('[Request interrupted'):
+                    real_human.append(text[:80])
+
+    if not first_ts: continue
+
+    # Convert timestamps to GMT+7
+    def to_gmt7(iso):
+        try:
+            dt = datetime.fromisoformat(iso.replace('Z', '+00:00'))
+            return (dt + bkk).strftime('%Y-%m-%d %H:%M')
+        except: return iso
+
+    dur_min = 0
+    if first_ts and last_ts:
+        try:
+            t1 = datetime.fromisoformat(first_ts.replace('Z', '+00:00'))
+            t2 = datetime.fromisoformat(last_ts.replace('Z', '+00:00'))
+            dur_min = int((t2 - t1).total_seconds() / 60)
+        except: pass
+
+    # Prefer index summary over first prompt
+    idx = index_map.get(sid, {})
+    final_summary = idx.get('summary') or summary_text or (real_human[0] if real_human else 'No summary')
+    final_branch = branch or idx.get('gitBranch') or 'unknown'
+
+    sessions.append({
+        'sessionId': sid[:12],
+        'startGMT7': to_gmt7(first_ts),
+        'endGMT7': to_gmt7(last_ts),
+        'durationMin': dur_min,
+        'realHumanMessages': len(real_human),
+        'assistantMessages': assistant_count,
+        'firstPrompt': real_human[0] if real_human else None,
+        'gitBranch': final_branch,
+        'summary': final_summary[:80],
+        'isSidechain': is_sidechain,
+    })
+
+sessions.sort(key=lambda s: s['startGMT7'], reverse=True)
+print(json.dumps(sessions, indent=2))
+PYEOF
+```
+
+### 2. Compile Timeline + Write Retrospective
+
+Read the JSON output. Compile the **Past Session Timeline** table, then write a full retrospective using the `--detail` template.
+
+Add this section after Session Summary, before Timeline:
+
+```markdown
+## Past Session Timeline (from --dig)
+
+| # | Date | Time | ~Min | Branch | Human Msgs | Focus |
+|---|------|------|------|--------|------------|-------|
+| 1 | 2026-02-07 | 14:30 | 102 | main | 8 | Wire /rrr to read pulse data |
+| 2 | 2026-02-07 | 12:00 | 20 | main | 5 | oracle-pulse birth + CLI flag |
+| ... |
+```
+
+"Human Msgs" = real typed messages (not tool approvals). This is accurate.
+
+Also run pulse context (step 1.5 from default mode) and weave into narrative.
+
+### 3-5. Same as default steps 3-5
+
+Write lesson learned, oracle sync, commit.
+
+```bash
+git add ψ/memory/retrospectives/ ψ/memory/learnings/
+git commit -m "rrr: dig - [slug]"
+```
+
+---
+
+## /rrr --deep
+
+Read `DEEP.md` in this skill directory. Only mode that uses subagents.
+
+---
+
+## Rules
+
+- **NO SUBAGENTS**: Never use Task tool or spawn subagents (only `--deep` may)
+- AI Diary: 150+ words, vulnerability, first-person
+- Honest Feedback: 100+ words, 3 friction points
+- Oracle Sync: REQUIRED after every lesson learned
+- Time Zone: GMT+7 (Bangkok)

@@ -1,0 +1,21 @@
+{
+  "userIgnoreFilters": [
+    "**.csv",
+    "**.pdf",
+    "**.docx",
+    "**.xlsx",
+    "copilot/",
+    "_Meta/",
+    "**.ini"
+  ],
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "newFileLocation": "root",
+  "promptDelete": false
+}
