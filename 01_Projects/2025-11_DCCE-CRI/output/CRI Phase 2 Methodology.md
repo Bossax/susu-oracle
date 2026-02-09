@@ -10,6 +10,8 @@ project:
   - DCCE_CRI
 related_hypothesis: "[[CRI pivoting to social-ecological system and context focused]]"
 ---
+
+
 >[!note] Change Log
 >- v1: project kick-off - Readiness and Resilience
 >- v2: After pivoting the project's strategy [[CRI pivoting to social-ecological system and context focused]]

@@ -104,27 +104,13 @@
             }
           },
           {
-            "id": "cb520ef26500d707",
+            "id": "d514970524ae055f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/2025-11_DCCE-CRDB/task/Conceptual Data Model for climate risk and adaptation data system.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Conceptual Data Model for climate risk and adaptation data system"
+              "title": "New tab"
             }
           }
         ],
@@ -182,7 +168,7 @@
             }
           },
           {
-            "id": "7a6eb866f6705573",
+            "id": "369bc5a20ac6c4df",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -335,22 +321,25 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "cb520ef26500d707",
+  "active": "d514970524ae055f",
   "lastOpenFiles": [
+    "Projects/2025-11_DCCE-CRI/sources/sources.md",
+    "CLAUDE.md",
+    "Projects/2025-11_DCCE-CRDB/task/Conceptual Data Model for climate risk and adaptation data system.md",
+    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/team/ampere/logs/desktop.ini",
+    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/team/ampere/desktop.ini",
+    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/memory/learnings/desktop.ini",
+    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/lab/handoff-mcp-v3/ψ/lab/desktop.ini",
+    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/lab/handoff-mcp-v3/ψ/desktop.ini",
+    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/lab/time-tracker/desktop.ini",
+    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/lab/squad-challenge-parser-bug/desktop.ini",
+    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/lab/slug/desktop.ini",
+    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/lab/session-timer/desktop.ini",
+    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/lab/projects/desktop.ini",
+    "ψ/announcement.md",
     "ψ/memory/resonance/oracle.md",
     "ψ/memory/resonance/susu-mao.md",
-    "ψ/memory/resonance",
-    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/memory/learnings/git/desktop.ini",
-    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/memory/learnings/ui/desktop.ini",
     "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/CLAUDE_workflows.md",
-    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/memory/learnings/maw-speckit/desktop.ini",
-    "CLAUDE.md",
-    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/memory/retrospectives/2026-01/04/desktop.ini",
-    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/memory/retrospectives/2025-12/15/desktop.ini",
-    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/memory/retrospectives/2026-01/05/desktop.ini",
-    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/memory/retrospectives/2025-12/23/desktop.ini",
-    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/memory/retrospectives/2026-01/01/desktop.ini",
-    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/memory/retrospectives/2025-12/16/desktop.ini",
     "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/Nat-s-Agents/ψ/memory/resonance/CLAUDE.md",
     "ψ/memory/traces/2026-02-09/1304_oracle-philosophy-principles.md",
     "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/README.md",
@@ -370,9 +359,6 @@
     "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/ψ/memory/retrospectives/2026-01/29/10.25_trace-linking-navigation.md",
     "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/ψ/memory/retrospectives/2026-01/29/09.46_release-system-ui-polish.md",
     "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/ψ/memory/retrospectives/2026-01/26/12.51_gesture-controls-laser-pointer.md",
-    "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/ψ/memory/retrospectives/2026-01/26/11.11_lightning-refinements-dock-magnify.md",
-    "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/ψ/memory/retrospectives/2026-01/26/10.44_lightning-effects-3d-graph.md",
-    "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/ψ/memory/retrospectives/2026-01/26/09.49_graph-merge-single-page.md",
     "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/frontend/src/assets/react.svg",
     "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/frontend/public/vite.svg",
     "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/frontend/dist/vite.svg",

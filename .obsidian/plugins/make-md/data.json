@@ -71,15 +71,13 @@
     "Projects/2025-11_DCCE-CRDB/Projects/2025-11_DCCE-CRDB/sources",
     "Projects/2025-11_UNDP-BTR/Projects/2025-11_UNDP-BTR/notes",
     "/",
-    "//Projects/Projects/2025-11_DCCE-CRI",
-    "//Projects/Projects/2025-11_DCCE-CRI/Projects/2025-11_DCCE-CRI/notes",
     "//Projects/Projects/2025-11_DCCE-CRI/Projects/2025-11_DCCE-CRI/output",
     "Projects/2025-11_DCCE-CRI/Projects/2025-11_DCCE-CRI/sources",
     "Projects/2025-11_DCCE-CRI/Projects/2025-11_DCCE-CRI/output",
     "Projects/2025-11_DCCE-CRDB/Projects/2025-11_DCCE-CRDB/notes",
-    "//Projects/Projects/2025-11_DCCE-CRDB",
     "//Projects/Projects/2025-11_DCCE-CRDB/Projects/2025-11_DCCE-CRDB/syntheses",
-    "//_Meta/_Meta/Oracle_Skills"
+    "//_Meta/_Meta/Oracle_Skills",
+    "//Projects"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
