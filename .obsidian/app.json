@@ -6,7 +6,8 @@
     "**.xlsx",
     "copilot/",
     "_Meta/",
-    "**.ini"
+    "**.ini",
+    "desktop.ini"
   ],
   "alwaysUpdateLinks": true,
   "pdfExportSettings": {

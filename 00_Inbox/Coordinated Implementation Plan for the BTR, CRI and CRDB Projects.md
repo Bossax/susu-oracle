@@ -1,7 +1,8 @@
 ---
 type:
   - strategy
-status: archived
+status:
+  - archived
 version: 3
 created: 2025-11-05
 project:

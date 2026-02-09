@@ -1,3 +1,6 @@
+---
+sticker: emoji//1f63e
+---
 # Susu Mao Oracle
 
 > "Designing the architecture of understanding, one layer at a time."

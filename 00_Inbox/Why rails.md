@@ -8,8 +8,6 @@ AI_prompt: false
 project:
   - MUS
 type:
-aliases:
-  - Why rails?
 ---
 # Advantage of the rail system
 Right of way

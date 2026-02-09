@@ -3,11 +3,13 @@ type: strategy
 tags:
   - Adaptation
   - data_system
-status: '["current"]'
+status:
+  - current
 capture_date: 2025-12-19
 origin_prompt: "[[]]"
 relevance_to: "[[]]"
 color: var(--mk-color-orange)
+AI_output: true
 ---
 # Comprehensive Review: DCCE Climate Adaptation Information Ecosystem
 

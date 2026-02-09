@@ -22,7 +22,7 @@
   "spacesEnabled": true,
   "syncFormulaToFrontmatter": true,
   "spacesPerformance": false,
-  "currentWaypoint": 0,
+  "currentWaypoint": 3,
   "enableFolderNote": true,
   "folderIndentationLines": true,
   "revealActiveFile": false,
@@ -40,7 +40,6 @@
   "expandedSpaces": [
     "Tags",
     "Projects/2025-11_DCCE-Climate-Risk-Data-System",
-    "Projects/2025-11_DCCE-CRDB",
     "Projects/2025-11_DCCE-CRDB/Projects/2025-11_DCCE-CRDB/resources",
     "Projects/2025-11_UNDP-BTR",
     "//Projects/Projects/2025-06_Foresight/Projects/2025-06_Foresight/task",
@@ -77,7 +76,16 @@
     "Projects/2025-11_DCCE-CRDB/Projects/2025-11_DCCE-CRDB/notes",
     "//Projects/Projects/2025-11_DCCE-CRDB/Projects/2025-11_DCCE-CRDB/syntheses",
     "//_Meta/_Meta/Oracle_Skills",
-    "//Projects"
+    "//Projects",
+    "//New folder",
+    "//01_Projects",
+    "01_Projects/2025-11_DCCE-CRI",
+    "01_Projects/2025-11_DCCE-CRDB",
+    "01_Projects/2025-11_DCCE-CRDB/01_Projects/2025-11_DCCE-CRDB/notes2",
+    "01_Projects/2025-12_TMD_WMO-Climate Service for Urban Governance",
+    "01_Projects/2025-12_TMD_WMO-Climate Service for Urban Governance/01_Projects/2025-12_TMD_WMO-Climate Service for Urban Governance/note",
+    "01_Projects/2025-11_DCCE-CRI/01_Projects/2025-11_DCCE-CRI/notes2",
+    "01_Projects/2025-11_DCCE-CRI/01_Projects/2025-11_DCCE-CRI/sources"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
@@ -122,7 +130,13 @@
     "_Meta/template/Evergreen.md",
     "Projects/2025-11_DCCE-CRI/task/desktop.ini",
     "Projects/2025-11_DCCE-CRI/output/desktop.ini",
-    "Projects/2025-11_DCCE-CRDB/sources/desktop.ini"
+    "Projects/2025-11_DCCE-CRDB/sources/desktop.ini",
+    "00_Meta/Oracle_Skills/desktop.ini",
+    "00_Inbox/desktop.ini",
+    "01_Projects/2025-11_DCCE-CRDB/notes/desktop.ini",
+    "01_Projects/2025-11_DCCE-CRDB/task/desktop.ini",
+    "01_Projects/2025-11_DCCE-CRI/desktop.ini",
+    "01_Projects/2025-11_DCCE-CRDB/output/desktop.ini"
   ],
   "hiddenExtensions": [
     ".mdb",
@@ -133,7 +147,7 @@
   "inlineBacklinks": false,
   "inlineContext": true,
   "inlineBacklinksExpanded": false,
-  "inlineContextExpanded": false,
+  "inlineContextExpanded": true,
   "inlineContextProperties": true,
   "inlineContextSectionsExpanded": true,
   "banners": true,

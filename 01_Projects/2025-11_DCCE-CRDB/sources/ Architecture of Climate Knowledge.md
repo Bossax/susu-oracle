@@ -1,15 +1,14 @@
 ---
-status: raw
+status: current
 tags: []
 created: 2026-01-13
-last_updated:
+last_updated: 2026-01-23
 AI_prompt: false
+AI_output: true
 project:
   - DCCE_CRDB
 type:
   - ai_output
-aliases:
-  - Idea / note
 ---
 https://gemini.google.com/share/4007b1ace3b0
 #  A Comprehensive Analysis of Data Modeling, Interoperability, and Risk Assessment Frameworks

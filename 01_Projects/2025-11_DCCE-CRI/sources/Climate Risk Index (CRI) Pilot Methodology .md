@@ -7,6 +7,7 @@ authors: []
 year:
 relevance_to: "[[]]"
 key_findings: []
+sticker: emoji//1f5dd-fe0f
 ---
 # Methodology of the CRI Pilot
 

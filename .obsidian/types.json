@@ -36,6 +36,7 @@
     "due date": "date",
     "created": "date",
     "last_updated": "date",
-    "AI_output": "checkbox"
+    "AI_output": "checkbox",
+    "": "multitext"
   }
 }

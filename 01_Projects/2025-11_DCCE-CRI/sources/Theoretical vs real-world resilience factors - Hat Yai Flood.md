@@ -1,6 +1,6 @@
 ---
 type: webpage
-status: raw
+status: current
 tags:
   - DRR
   - adaptive_capacity
@@ -8,6 +8,31 @@ tags:
 capture_date: 2025-12-01
 origin_url: https://www.facebook.com/share/p/17fF4Y24Ht/
 relevance_to: "[[]]"
+---
+## Key Takeaways for CRI Project
+
+Based on the analysis of the Hat Yai flood event, the following insights are critical for the Climate Resilience Index (CRI):
+
+1. **Process vs. Outcome Measurement**:
+   - Resilience awards often reward "processes" (networks, plans) rather than actual protection outcomes.
+   - **CRI Application**: The index should differentiate between *administrative capacity* (plans exist) and *operational effectiveness* (plans work under stress).
+
+2. **Psycho-Social Vulnerability**:
+   - "Fatal Attitudes" (complacency, fatalism, denial) creates invisible vulnerability even in well-equipped cities.
+   - **CRI Application**: Incorporate indicators for **Risk Perception** and **Proactive Attitude**. High resilience scores shouldn't be awarded to communities with high "Optimism Bias" or "Passive Acceptance".
+
+3. **Past-Event Complacency**:
+   - Reliance on historical data (e.g., "it wasn't this bad before") and existing infrastructure (designed for past climates) causes failure in new climate realities.
+   - **CRI Application**: Infrastructure resilience must be assessed against **future climate projections**, not just historical return periods.
+
+4. **Self-Reliance vs. System Dependence**:
+   - Over-reliance on government warnings/dams leads to a lack of personal preparedness (e.g., no 72-hour survival kits).
+   - **CRI Application**: Measure **Household Preparedness** and **Self-Reliance** capabilities. A resilient system requires distributed capacity, not just centralized protection.
+
+5. **Resource Allocation (Prevention vs. Cure)**:
+   - A focus on post-disaster compensation rather than pre-disaster investment perpetuates the disaster cycle.
+   - **CRI Application**: Track the ratio of budget/effort spent on **Prevention & Mitigation** vs. **Recovery & Compensation**.
+
 ---
 คำเตือน นี่เป็นบทความเชิงวิชาการนะคะ
 
@@ -56,3 +81,4 @@ relevance_to: "[[]]"
 ดร.ปาริขอแสดงความเสียใจต่อผู้สูญเสียทุกพื้นที่ และขอให้กอบกู้กำลังกาย กำลังใจกลับมายืนขึ้นใหม่อย่างเข้มแข็งและอดทน
 
 หมายเหตุ ภาพประกอบเป็นรถของพ่อแก้มใสที่ยังฝากไว้ที่เขตแปด หาดใหญ่
+

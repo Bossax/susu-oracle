@@ -1,6 +1,9 @@
 ---
-type: ai_output
-status: raw
+type:
+  - Artifact
+status:
+  - archived
+AI_output: true
 tags:
   - climate_service
   - data_system
@@ -10,7 +13,6 @@ capture_date: 2025-10-30
 origin_prompt: "[[]]"
 relevance_to: "[[]]"
 ---
-
 
 
 ## Section 1: The Architecture of a National Adaptation Information Framework
@@ -40,7 +42,6 @@ The very process of designing and operationalizing such a framework serves as a 
 
 ### 1.3 The Four Pillars: Data Domains of the Adaptation Cycle
 
-  
 
 The framework is structured around four interconnected data domains that mirror the iterative adaptation process as recognized by the United Nations Framework Convention on Climate Change (UNFCCC) and the Intergovernmental Panel on Climate Change (IPCC).6 This structure ensures comprehensive support for the entire policy lifecycle, from initial assessment to long-term learning and adjustment.
 

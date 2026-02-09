@@ -1,12 +1,13 @@
 ---
-type: ai_output
+type:
 tags: []
 status:
-  - raw
+  - current
 capture_date: 2025-12-19
 origin_prompt: "[[Project timeline shift to align with UNDP-BTR Task 1 ]]"
 relevance_to: "[[]]"
 color: var(--mk-color-orange)
+AI_output: true
 ---
 # Implementation Guideline: Integrated Project Roadmap (Jan–Apr 2026)
 

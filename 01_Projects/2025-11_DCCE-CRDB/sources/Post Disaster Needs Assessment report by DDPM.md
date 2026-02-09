@@ -1,6 +1,6 @@
 ---
 type:
-  - report
+  - Artifact
 status: current
 last_updated: 2025-10-31
 tags:
@@ -10,7 +10,7 @@ tags:
 source: " "
 authors:
   - DDPM
-year: " "
+year:
 relevance_to: "[[]]"
 key_findings: " "
 ---

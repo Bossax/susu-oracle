@@ -3,7 +3,7 @@ status: raw
 tags:
   - Risk_management
 created: 2026-01-21
-last_updated:
+last_updated: 2026-01-21
 AI_prompt: false
 project:
 type:

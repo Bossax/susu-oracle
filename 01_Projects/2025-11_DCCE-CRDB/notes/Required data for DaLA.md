@@ -1,5 +1,6 @@
 ---
-type: hypothesis
+type:
+  - Artifact
 status: raw
 version: 1
 tags:

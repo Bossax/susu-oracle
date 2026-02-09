@@ -1,5 +1,6 @@
 ---
-type: ai_output
+type:
+  - Artifact
 status: raw
 tags:
   - Loss_and_Damage
@@ -7,6 +8,7 @@ tags:
 capture_date: 2025-10-30
 origin_prompt:
 relevance_to: "[["
+AI_output: true
 ---
 
 ## Introduction
