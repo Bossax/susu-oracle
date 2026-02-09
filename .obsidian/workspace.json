@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1a44086fe674f486",
+            "id": "240da284e1db100a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/2025-11_DCCE-CRDB/task/Conceptual Data Model for climate risk and adaptation data system.md",
+                "file": "01_Projects/2025-06_Foresight/task/Presentation Deck for Children Foresight V2.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Conceptual Data Model for climate risk and adaptation data system"
+              "title": "Presentation Deck for Children Foresight V2"
             }
           },
           {
-            "id": "ccafa9cbc2f45016",
+            "id": "84bb99e562958a4c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/2025-11_DCCE-CRDB/notes/Use cases and Data domain- UNDP project interview result.md",
+                "file": "01_Projects/2025-06_Foresight/notes/Slide deck design log.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,143 +52,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Use cases and Data domain- UNDP project interview result"
-            }
-          },
-          {
-            "id": "5386b4710250e348",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/2025-11_DCCE-CRI/sources/Development of National Climate Risk Index.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Development of National Climate Risk Index"
-            }
-          },
-          {
-            "id": "5e188bdbd7b42637",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_Inbox/Coordinated Implementation Plan for the BTR, CRI and CRDB Projects.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Coordinated Implementation Plan for the BTR, CRI and CRDB Projects"
-            }
-          },
-          {
-            "id": "d514970524ae055f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01_Projects/2025-11_DCCE-CRI/sources/Theoretical vs real-world resilience factors - Hat Yai Flood.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Theoretical vs real-world resilience factors - Hat Yai Flood"
-            }
-          },
-          {
-            "id": "73b15f8d0a31caab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01_Projects/2025-11_DCCE-CRI/sources/Theoretical vs real-world resilience factors - Hat Yai Flood.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Theoretical vs real-world resilience factors - Hat Yai Flood"
-            }
-          },
-          {
-            "id": "b7117a97ec4f03a6",
-            "type": "leaf",
-            "state": {
-              "type": "mk-space",
-              "state": {
-                "path": "01_Projects/2025-11_DCCE-CRI/sources"
-              },
-              "icon": "lucide-file",
-              "title": "sources"
-            }
-          },
-          {
-            "id": "8ede05c1959d3809",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01_Projects/2025-11_DCCE-CRDB/sources/ Architecture of Climate Knowledge.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Architecture of Climate Knowledge"
+              "title": "Slide deck design log"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -256,8 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5,
-    "collapsed": true
+    "width": 265.5
   },
   "right": {
     "id": "2620aee743c1548d",
@@ -395,47 +261,47 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "d514970524ae055f",
+  "active": "240da284e1db100a",
   "lastOpenFiles": [
-    "ψ/memory/learnings/desktop.ini",
-    "ψ/memory/retrospectives/2026-02/09/desktop.ini",
-    "ψ/memory/retrospectives/2026-02/desktop.ini",
-    "ψ/memory/retrospectives/desktop.ini",
+    "ψ/data/pulse/heartbeat.json",
+    "ψ/data/pulse/project.json",
+    "ψ/data/pulse/stats - Copy (2).json",
+    "ψ/data/pulse/stats - Copy.json",
+    "ψ/memory/retrospectives/2026-02/10/desktop.ini",
+    "ψ/memory/learnings/2026-02-10_environment-agnosticism.md",
+    "ψ/memory/retrospectives/2026-02/10/00.25_recap-and-maintenance.md",
+    "ψ/memory/retrospectives/2026-02/10",
+    "01_Projects/2025-06_Foresight/notes/Slide deck design log.md",
+    "01_Projects/2025-06_Foresight/notes/desktop.ini",
+    "01_Projects/2025-06_Foresight/notes/notes.md",
+    "01_Projects/2025-06_Foresight/notes",
+    "01_Projects/2025-06_Foresight/task/Presentation Deck for Children Foresight V2.md",
+    "01_Projects/2025-06_Foresight/task/task.md",
+    "01_Projects/2025-06_Foresight/task/Presentation Deck for Children Foresight V1.md",
+    "01_Projects/2025-06_Foresight/2025-06_Foresight.md",
+    "01_Projects/01_Projects.md",
+    "00_Inbox/Coordinated Implementation Plan for the BTR, CRI and CRDB Projects.md",
+    "01_Projects/2025-11_DCCE-CRDB/sources/ Architecture of Climate Knowledge.md",
     "ψ/memory/learnings/2026-02-09_cri-resilience-factors.md",
-    "ψ/memory/learnings",
+    "ψ/memory/learnings/2026-02-09_system-file-handling.md",
+    "ψ/memory/retrospectives/2026-02/09/21.45_recap-fix.md",
+    "ψ/data/pulse/stats.json",
+    "ψ/data/pulse/desktop.ini",
+    "ψ/data/desktop.ini",
     "ψ/memory/retrospectives/2026-02/09/18.15_cri-resilience-factors.md",
-    "ψ/memory/retrospectives/2026-02/09",
-    "ψ/memory/retrospectives/2026-02",
-    "ψ/memory/retrospectives",
+    "ψ/awakening_context.md",
+    "ψ/announcement.md",
+    "ψ/memory/traces/2026-02-09/1304_oracle-philosophy-principles.md",
+    "ψ/memory/resonance/susu-mao.md",
+    "ψ/memory/resonance/oracle.md",
+    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/memory/retrospectives/RETROSPECTIVES.md",
     "01_Projects/2025-11_DCCE-CRI/sources/Theoretical vs real-world resilience factors - Hat Yai Flood.md",
-    "ψ/learn/local/2025-11_DCCE-CRI-sources/2026-02-09/desktop.ini",
     "ψ/learn/local/2025-11_DCCE-CRI-sources/2025-11_DCCE-CRI-sources.md",
     "ψ/learn/local/2025-11_DCCE-CRI-sources/2026-02-09/1052_QUICK-REFERENCE.md",
     "ψ/learn/local/2025-11_DCCE-CRI-sources/2026-02-09/1052_KEY-EXCERPTS.md",
-    "ψ/learn/local/2025-11_DCCE-CRI-sources/desktop.ini",
-    "-p/desktop.ini",
-    "ψ/learn/local/2025-11_DCCE-CRI-sources/2026-02-09/1052_ARCHITECTURE.md",
-    "01_Projects/2025-11_DCCE-CRI/sources/sources.md",
-    "01_Projects/2025-11_DCCE-CRI/sources/Studies on adaptive capacity to climate change a synthesis of changing concepts, dimensions, and indicators.md",
-    "01_Projects/2025-11_DCCE-CRDB/output/output.md",
-    "01_Projects/2025-11_DCCE-CRDB/output/CRDB - TOR.md",
-    "99_Archive/Use cases of climate data and information.md",
-    "01_Projects/2025-11_DCCE-CRDB/sources/Damage and Loss Estimation - techniques.md",
-    "01_Projects/2025-11_DCCE-CRI/sources/Estimating Historical Disaster Damage and Loss with Limited Data.md",
     "01_Projects/2025-11_DCCE-CRI/attachments/JVNBWK5D.png",
     "01_Projects/2025-11_DCCE-CRI/attachments/87GIVKZT.png",
     "01_Projects/2025-11_DCCE-CRI/attachments/5IZUZAW2.png",
-    "01_Projects/2025-12_TMD_WMO-Climate Service for Urban Governance/note/note.md",
-    "01_Projects/2025-11_DCCE-CRDB/notes2/notes2.md",
-    "01_Projects/2025-11_DCCE-CRI/notes/notes.md",
-    "01_Projects/2025-11_DCCE-CRDB/2025-11_DCCE-CRDB.md",
-    "01_Projects/2025-11_DCCE-CRDB/notes/notes.md",
-    "01_Projects/2025-11_DCCE-CRI/notes2/notes2.md",
-    "01_Projects/2025-11_DCCE-CRI/Untitled.md",
-    "01_Projects/2025-11_DCCE-CRI/2025-11_DCCE-CRI.md",
-    "01_Projects/2025-11_DCCE-CRDB/notes2.md",
-    "01_Projects/2025-11_DCCE-CRDB/sources/ Architecture of Climate Knowledge.md",
-    "01_Projects/2025-11_DCCE-CRDB/sources/sources.md",
     "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/frontend/src/assets/react.svg",
     "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/frontend/public/vite.svg",
     "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/frontend/dist/vite.svg",
