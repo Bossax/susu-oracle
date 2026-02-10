@@ -76,6 +76,7 @@ The draft is based on deep research results and project documents
 - **`EXPOSED_ASSET`**
     - **Definition:** Elements of society (Population, Infrastructure, Ecosystems) present in hazard zones.
     - **Taxonomy:** Aligned with **GED4ALL** (e.g., Building structural types, Crop varieties).
+    - **GHG Synergy (TGEIS Alignment):** This entity doubles as "Activity Data" for GHG inventory (Division 2.1). Attributes must include TGEIS requirements (e.g., Manure management type for livestock, Rice variety for methane calcs) to prevent double-reporting.
         
 - **`VULNERABILITY_PROFILE`**
     - **Definition:** The intrinsic predisposition of an asset to be adversely affected.
@@ -116,6 +117,62 @@ erDiagram
     
     %% M&E / ADAPTATION (External/Shallow)
     RISK_ASSESSMENT }|--|| ADAPTATION_INTERVENTION : informs
+```
+
+---
+
+# Expanded Subject Areas (Feb 10 Update)
+
+Based on benchmarking with **A-PLAT (Japan)**, **KLiVO (Germany)**, and **Climate-ADAPT (EU)**, and analysis of DCCE "Orphaned" products (SAR, Eco-School, T-PLAT), the CDM is expanded into three new domains to bridge the "Science-to-Action" gap.
+
+## 1. Adaptation & Response Domain
+*Focus: Transforming risk information into fundable projects and tracking implementation.*
+
+- **`ADAPTATION_OPTION`**
+    - **Definition:** A library of standardized solutions (e.g., NbS Mangrove Restoration, Early Warning Systems).
+    - **Attributes:** Technology Readiness Level (TRL), Sector (NAP-aligned), estimated CBA ratio.
+- **`ADAPTATION_PROJECT`**
+    - **Definition:** A specific instance of an option applied to a `SPATIAL_UNIT`.
+    - **Relationship:** Linked to `RISK_ASSESSMENT` to justify the business case.
+- **`FUNDING_SOURCE`**
+    - **Definition:** Tracking the origin of capital (Budget, GCF, GEF, Private).
+
+## 2. Activity & Audit Domain (Management Tracking)
+*Focus: Accommodating DCCE management platforms like Eco-School and Green City (SAR).*
+
+- **`MANAGEMENT_PROGRAM`**
+    - **Definition:** The high-level initiative (e.g., "National Eco-School Network").
+- **`PARTICIPANT_ENTITY`**
+    - **Definition:** The school, municipality, or community group enrolled in the program.
+- **`AUDIT_RECORD`**
+    - **Definition:** The result of a self-assessment or external audit (e.g., SAR scores).
+    - **Business Rule:** Allows querying "Risk vs. Preparedness" (e.g., "Show me Eco-School scores in High-Flood-Risk basins").
+
+## 3. Knowledge & Content Domain
+*Focus: Bridging the "Awareness" gap via T-PLAT qualitative content.*
+
+- **`KNOWLEDGE_ASSET`**
+    - **Definition:** Qualitative resources (Infographics, Case Studies, Best Practice PDFs).
+- **`CONTENT_TAG`**
+    - **Definition:** Dynamic semantic links that bind a document to a physical `HAZARDOUS_EVENT` or a `SPATIAL_UNIT`.
+
+```mermaid
+erDiagram
+    %% --- ADAPTATION & RESPONSE ---
+    ADAPTATION_OPTION ||--o{ ADAPTATION_PROJECT : "instantiates"
+    ADAPTATION_PROJECT }|--|| SPATIAL_UNIT : "located_at"
+    ADAPTATION_PROJECT }|--o| RISK_ASSESSMENT : "addresses"
+    ADAPTATION_PROJECT }|--o{ FUNDING_SOURCE : "funded_by"
+    
+    %% --- ACTIVITY & AUDIT (Management) ---
+    MANAGEMENT_PROGRAM ||--|{ PARTICIPANT_ENTITY : "enrolls"
+    PARTICIPANT_ENTITY ||--o{ AUDIT_RECORD : "undergoes"
+    PARTICIPANT_ENTITY ||--|| SPATIAL_UNIT : "situated_in"
+    
+    %% --- KNOWLEDGE MANAGEMENT ---
+    KNOWLEDGE_ASSET }|--|{ CONTENT_TAG : "classified_by"
+    CONTENT_TAG }|..o| HAZARDOUS_EVENT : "references"
+    CONTENT_TAG }|..o| ADAPTATION_OPTION : "illustrates"
 ```
 
 
