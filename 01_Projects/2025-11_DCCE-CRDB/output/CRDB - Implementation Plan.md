@@ -2,9 +2,9 @@
 type: strategy
 status:
   - current
-version: 8
+version: 9
 created: 2025-12-16
-last_updated: 2026-01-14
+last_updated: 2026-02-10
 project:
   - DCCE_CRDB
 related_hypothesis:
@@ -14,10 +14,11 @@ v2: update the plan per latest proposal
 v3: include specific timeline
 v4: increase temporal resolution to week
 v5: Realigned deliverables to Enterprise Data Architecture standards.
-v6: Incorporated synchronization with UNDP/ADPC BTR Project. 
+v6: Incorporated synchronization with UNDP/ADPC BTR Project.
 > v7: After KO meeting
 > v8: revise focus group meeting agenda and progress meeting timelines
 > v9: change after [[Reframe the scope of data system]]
+> v10: Updated timeline and deliverables per 2026 Integrated Project Roadmap. Included Inception submission, Joint Risk Review, and "January Brain Drain" mitigation.
 
 
 
@@ -248,7 +249,7 @@ The project is organized into six work packages (WPs) that collectively deliver 
 
 ### Key activities and timeline
 
-- [x] **Kick‑off and scope refinement (Dec 2025).** Review the TOR with DCCE to clarify expectations. Note that project outputs are now framed as "System Requirements" for a future IT infrastructure implementation phase. 
+- [x] **Kick‑off and scope refinement (Dec 2025).** Review the TOR with DCCE to clarify expectations. Note that project outputs are now framed as "System Requirements" for a future IT infrastructure implementation phase.
 
 - [x] **Work plan and inception report (Dec 2025 – Jan 2026).** Develop a work breakdown structure and draft the inception report. The inception report is targeted for delivery by **7 January 2026**.
     
@@ -256,8 +257,9 @@ The project is organized into six work packages (WPs) that collectively deliver 
     
 - [x] **Baseline review of international platforms and DCCE systems (Dec 2025 – Jan 2026).** Conduct desk research on adaptation information platforms and DCCE systems to inform conceptual model. This aligns with task 5.2.1 and now concludes by January 2026
     
+- [ ] **Joint Risk Review (Jan 2026):** Collaborate with BTR/CRI teams to review climate risks across 6 NAP Sectors (Water, Agriculture, Tourism, Health, Natural Resources, Human Settlement) to inform the initial Data Landscape.
 
-**Deliverable:** Inception report and stakeholder engagement plan, due by the December 2025.
+**Deliverable:** Inception report (submitted Jan 7, 2026) and stakeholder engagement plan.
 
 ### Timeline
 
@@ -265,7 +267,7 @@ The project is organized into six work packages (WPs) that collectively deliver 
 | ------------ | ---------------------------------------------------------------------------------------------------------------- |
 | **Nov 2025** | scope refinement; begin work plan & inception report (mid‑month); stakeholder mapping; baseline review begins    |
 | **Dec 2025** | Kick‑off & Complete work plan & inception report; finalize stakeholder engagement plan; continue baseline review |
-| **Jan 2026** | Complete baseline review                                                                                         |
+| **Jan 2026** | **Submit Inception Report (Jan 7)**; Joint Risk Review; Complete baseline review                                 |
 
 ## Work Package 2 – Data Landscape and Requirements Assessment
 
@@ -303,6 +305,7 @@ The project is organized into six work packages (WPs) that collectively deliver 
 ### Key activities and timeline
 
 1. **Develop NCAIF Business Taxonomy (Jan-Feb 2026):**
+    - **Drafting NCAIF (Jan):** Principal Researcher defines the business logic/hierarchy.
     - Create hierarchical knowledge structure
     - Produce Business Glossary
 
