@@ -2,7 +2,7 @@
 type: ai_output
 tags:
   - data_system
-status: '["current"]'
+status: current
 capture_date: 2025-12-01
 origin_prompt: does an organization usually hire a consultant to create an enterprise data system? what are the typical scopes of work that spread across different projects
 relevance_to: "[[]]"

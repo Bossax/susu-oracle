@@ -22,7 +22,7 @@
   "spacesEnabled": true,
   "syncFormulaToFrontmatter": true,
   "spacesPerformance": false,
-  "currentWaypoint": 0,
+  "currentWaypoint": 1,
   "enableFolderNote": true,
   "folderIndentationLines": true,
   "revealActiveFile": false,
@@ -83,7 +83,6 @@
     "01_Projects/2025-12_TMD_WMO-Climate Service for Urban Governance",
     "01_Projects/2025-12_TMD_WMO-Climate Service for Urban Governance/01_Projects/2025-12_TMD_WMO-Climate Service for Urban Governance/note",
     "01_Projects/2025-11_DCCE-CRI/01_Projects/2025-11_DCCE-CRI/notes2",
-    "01_Projects/2025-11_DCCE-CRI/01_Projects/2025-11_DCCE-CRI/sources",
     "//ψ/ψ/memory/ψ/memory/traces/ψ/memory/traces/2026-02-09",
     "//Projects",
     "//Projects/Projects/2025-11_DCCE-CRDB",
@@ -92,11 +91,13 @@
     "//ψ/ψ/memory",
     "//-p",
     "//01_Projects",
-    "//01_Projects/01_Projects/2025-06_Foresight",
     "//01_Projects/01_Projects/2025-06_Foresight/01_Projects/2025-06_Foresight/notes",
     "//ψ",
     "//ψ/ψ/data",
-    "//ψ/ψ/data/ψ/data/pulse"
+    "//ψ/ψ/data/ψ/data/pulse",
+    "01_Projects/2025-11_UNDP-BTR",
+    "01_Projects/2025-11_DCCE-CRI/01_Projects/2025-11_DCCE-CRI/sources",
+    "01_Projects/2025-11_DCCE-CRDB/01_Projects/2025-11_DCCE-CRDB/notes"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
@@ -147,7 +148,9 @@
     "01_Projects/2025-11_DCCE-CRDB/notes/desktop.ini",
     "01_Projects/2025-11_DCCE-CRDB/task/desktop.ini",
     "01_Projects/2025-11_DCCE-CRI/desktop.ini",
-    "01_Projects/2025-11_DCCE-CRDB/output/desktop.ini"
+    "01_Projects/2025-11_DCCE-CRDB/output/desktop.ini",
+    "01_Projects/2025-11_DCCE-CRDB/desktop.ini",
+    "01_Projects/2025-11_DCCE-CRDB/sources/desktop.ini"
   ],
   "hiddenExtensions": [
     ".mdb",

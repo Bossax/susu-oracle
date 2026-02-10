@@ -1,11 +1,12 @@
 ---
 type: web clipped
-status: raw
+status: current
 tags:
   - data_model
 capture_date: 2026-02-05
 url: https://www.thoughtspot.com/data-trends/data-modeling/conceptual-vs-logical-vs-physical-data-models
 relevance to: "[[Conceptual Data Model for climate risk and adaptation data system]]"
+sticker: emoji//1f310
 ---
 ## Conceptual vs logical vs physical data models: What’s the difference?
 

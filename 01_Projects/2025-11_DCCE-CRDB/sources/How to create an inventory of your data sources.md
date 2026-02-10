@@ -1,10 +1,11 @@
 ---
-type: "web clipped"
-status: "raw"
+type: web clipped
+status: raw
 tags:
 capture_date:
-url: "https://www.lightsondata.com/how-to-create-an-inventory-of-your-data-sources/"
-"relevance to": "[["
+url: https://www.lightsondata.com/how-to-create-an-inventory-of-your-data-sources/
+relevance to: "[["
+sticker: emoji//1f310
 ---
 by
 

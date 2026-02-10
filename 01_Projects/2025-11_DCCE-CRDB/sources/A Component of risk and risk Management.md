@@ -7,6 +7,7 @@ tags:
 capture_date:
 url: https://www.gsi.ie/en-ie/programmes-and-projects/groundwater/activities/understanding-ireland-groundwater/groundwater-vulnerability/Pages/Component-of-risk.aspx
 relevance to: "[["
+sticker: emoji//1f310
 ---
 ## Risk and risk assessment
 

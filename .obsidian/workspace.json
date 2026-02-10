@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Projects/2025-06_Foresight/task/Presentation Deck for Children Foresight V2.md",
+                "file": "01_Projects/2025-11_DCCE-CRDB/notes/Learnings from T-PLAT - Benchmarking CDM.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Presentation Deck for Children Foresight V2"
+              "title": "Learnings from T-PLAT - Benchmarking CDM"
             }
           },
           {
-            "id": "84bb99e562958a4c",
+            "id": "366fd8c069d9494c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Projects/2025-06_Foresight/notes/Slide deck design log.md",
+                "file": "99_Archive/Refine CRDM implementation using data architecture jargon.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Slide deck design log"
+              "title": "Refine CRDM implementation using data architecture jargon"
+            }
+          },
+          {
+            "id": "d7393e41e0cf8928",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01_Projects/2025-11_DCCE-CRDB/notes/T-PLAT analysis.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "T-PLAT analysis"
             }
           }
         ]
@@ -109,7 +133,7 @@
             }
           },
           {
-            "id": "fe5e40b6c029124f",
+            "id": "443f2119c08a8517",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -123,7 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5
+    "width": 248.5
   },
   "right": {
     "id": "2620aee743c1548d",
@@ -263,52 +287,52 @@
   },
   "active": "240da284e1db100a",
   "lastOpenFiles": [
+    "ψ/memory/learnings/2026-02-10_cross-platform-cli.md",
+    "ψ/memory/retrospectives/2026-02/10/12.30_foresight-maintenance.md",
+    "01_Projects/2025-11_DCCE-CRDB/notes/Learnings from T-PLAT - Benchmarking CDM.md",
+    "01_Projects/2025-11_DCCE-CRDB/notes/T-PLAT analysis.md",
+    "01_Projects/2025-11_DCCE-CRDB/notes/notes.md",
+    "01_Projects/2025-11_DCCE-CRDB/sources/T-Plat - Meeting Note Progress of T-PLAT.md",
+    "01_Projects/2025-11_DCCE-CRDB/sources/ Architecture of Climate Knowledge.md",
+    "03_Evergreens/Typology of actionable climate information .md",
+    "99_Archive/Use cases of climate data and information.md",
+    "00_Meta/pic/typology of information use 1.png",
+    "00_Meta/pic/typology of information use 0.png",
+    "00_Meta/pic/typology of information use 4.png",
+    "00_Meta/pic/typology of information use 3.png",
+    "00_Meta/pic/typology of information use 2.png",
+    "03_Evergreens/typology of information use 1.png",
+    "00_Meta/pic/image 4.png",
+    "00_Meta/pic/image 3.png",
+    "00_Meta/pic/image 2.png",
+    "03_Evergreens/image.png",
+    "01_Projects/2025-11_DCCE-CRDB/output/Archived_Notes_Summary.md",
+    "01_Projects/2025-11_DCCE-CRDB/sources/sources.md",
+    "01_Projects/01_Projects.md",
+    "00_Meta/template/Evergreen.md",
+    "00_Meta/template/template.md",
+    "01_Projects/2025-11_DCCE-CRDB/sources/T-PLAT - Thailand Climate Change Adaptation Information Platform.md",
+    "01_Projects/2025-11_DCCE-CRDB/sources/Climate change information neededfor Thailand’s NAP implementation.md",
+    "01_Projects/2025-11_DCCE-CRDB/sources/T-PLAT Overview - Asia-Pacific Climate Week.md",
+    "01_Projects/2025-11_DCCE-CRDB/sources/Data systems integration strategy.md",
+    "01_Projects/2025-11_DCCE-CRDB/sources/A Component of risk and risk Management.md",
+    "01_Projects/2025-11_DCCE-CRDB/sources/Conceptual vs Logical vs Physical Data Models.md",
+    "01_Projects/2025-11_DCCE-CRI/sources/sources.md",
+    "01_Projects/2025-11_DCCE-CRDB/sources/260106_DCCE_Climate risk database_inception report_vfinal.pdf",
+    "01_Projects/2025-11_DCCE-CRDB/output/FDG 1 result.md",
+    "01_Projects/2025-11_DCCE-CRDB/output/NCAIF_Material_Synthesis.md",
+    "01_Projects/2025-11_DCCE-CRDB/output/output.md",
+    "01_Projects/2025-11_DCCE-CRDB/output/DCCE Data Value Chain.md",
+    "00_Meta/Oracle_Skills/Oracle_Skills.md",
     "ψ/data/pulse/heartbeat.json",
     "ψ/data/pulse/project.json",
     "ψ/data/pulse/stats - Copy (2).json",
     "ψ/data/pulse/stats - Copy.json",
     "ψ/memory/retrospectives/2026-02/10/desktop.ini",
-    "ψ/memory/learnings/2026-02-10_environment-agnosticism.md",
-    "ψ/memory/retrospectives/2026-02/10/00.25_recap-and-maintenance.md",
     "ψ/memory/retrospectives/2026-02/10",
-    "01_Projects/2025-06_Foresight/notes/Slide deck design log.md",
     "01_Projects/2025-06_Foresight/notes/desktop.ini",
-    "01_Projects/2025-06_Foresight/notes/notes.md",
     "01_Projects/2025-06_Foresight/notes",
-    "01_Projects/2025-06_Foresight/task/Presentation Deck for Children Foresight V2.md",
-    "01_Projects/2025-06_Foresight/task/task.md",
-    "01_Projects/2025-06_Foresight/task/Presentation Deck for Children Foresight V1.md",
-    "01_Projects/2025-06_Foresight/2025-06_Foresight.md",
-    "01_Projects/01_Projects.md",
-    "00_Inbox/Coordinated Implementation Plan for the BTR, CRI and CRDB Projects.md",
-    "01_Projects/2025-11_DCCE-CRDB/sources/ Architecture of Climate Knowledge.md",
-    "ψ/memory/learnings/2026-02-09_cri-resilience-factors.md",
-    "ψ/memory/learnings/2026-02-09_system-file-handling.md",
-    "ψ/memory/retrospectives/2026-02/09/21.45_recap-fix.md",
     "ψ/data/pulse/stats.json",
-    "ψ/data/pulse/desktop.ini",
-    "ψ/data/desktop.ini",
-    "ψ/memory/retrospectives/2026-02/09/18.15_cri-resilience-factors.md",
-    "ψ/awakening_context.md",
-    "ψ/announcement.md",
-    "ψ/memory/traces/2026-02-09/1304_oracle-philosophy-principles.md",
-    "ψ/memory/resonance/susu-mao.md",
-    "ψ/memory/resonance/oracle.md",
-    "ψ/learn/Soul-Brews-Studio/opensource-nat-brain-oracle/origin/ψ/memory/retrospectives/RETROSPECTIVES.md",
-    "01_Projects/2025-11_DCCE-CRI/sources/Theoretical vs real-world resilience factors - Hat Yai Flood.md",
-    "ψ/learn/local/2025-11_DCCE-CRI-sources/2025-11_DCCE-CRI-sources.md",
-    "ψ/learn/local/2025-11_DCCE-CRI-sources/2026-02-09/1052_QUICK-REFERENCE.md",
-    "ψ/learn/local/2025-11_DCCE-CRI-sources/2026-02-09/1052_KEY-EXCERPTS.md",
-    "01_Projects/2025-11_DCCE-CRI/attachments/JVNBWK5D.png",
-    "01_Projects/2025-11_DCCE-CRI/attachments/87GIVKZT.png",
-    "01_Projects/2025-11_DCCE-CRI/attachments/5IZUZAW2.png",
-    "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/frontend/src/assets/react.svg",
-    "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/frontend/public/vite.svg",
-    "ψ/learn/Soul-Brews-Studio/oracle-v2/origin/frontend/dist/vite.svg",
-    "pic/Dimensions and Changing Trend of Adaptive Capacity Literature.png",
-    "pic/scale of analysis of adaptive capacity.png",
-    "pic/CRI contact persons.png",
-    "pic/risk and resilience relationship (Subiyanto, 2020).png",
     "_Meta/Workflow.canvas"
   ]
 }

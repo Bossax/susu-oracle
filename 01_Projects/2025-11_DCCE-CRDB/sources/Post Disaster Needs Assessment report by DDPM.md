@@ -13,6 +13,7 @@ authors:
 year:
 relevance_to: "[[]]"
 key_findings: " "
+sticker: emoji//1f4d5
 ---
 # กรอบการประเมินความต้องการหลังการเกิดภัยพิบัติ (PDNA)
 1. การประเมินความเสียหายและความต้องการความช่วยเหลือ ระยะที่ 0-2 (Damage andNeeds Assessment : DaNA)

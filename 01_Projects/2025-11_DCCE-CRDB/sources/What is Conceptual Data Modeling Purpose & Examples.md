@@ -1,12 +1,13 @@
 ---
 type: web clipped
-status: raw
+status: current
 tags:
   - data_model
   - data_system
 capture_date: 2026-01-13
 url: https://airbyte.com/data-engineering-resources/conceptual-data-model
 relevance to: "[["
+sticker: emoji//1f310
 ---
 [![What is Conceptual Data Modeling: Purpose & Examples](https://cdn.prod.website-files.com/687b2d16145b3601a227c560/68d2b317fb2dd7c6d7395a13_68ce868cbd96b4270216d958_6745bec4b04c718a363d4d67_47.png)](https://airbyte.com/data-engineering-resources/#)
 

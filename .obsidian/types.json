@@ -37,6 +37,7 @@
     "created": "date",
     "last_updated": "date",
     "AI_output": "checkbox",
-    "": "multitext"
+    "": "multitext",
+    "sta": "multitext"
   }
 }

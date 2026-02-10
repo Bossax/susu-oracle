@@ -9,8 +9,9 @@ tags:
   - Methodology
 project:
 parent_note: "[[ ]]"
-created:
+created: 2026-01-02
 ---
+<!--comment:  could be from world bank doc?--> 
 # Baseline data
 - Gather at the inception of the project
 - basic socio-economic data

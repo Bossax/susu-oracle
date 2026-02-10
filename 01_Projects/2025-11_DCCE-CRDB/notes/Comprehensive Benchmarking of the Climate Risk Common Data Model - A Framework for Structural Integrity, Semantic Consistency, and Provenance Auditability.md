@@ -1,3 +1,15 @@
+---
+status: raw
+tags: []
+created: 2026-02-04
+last_updated: 2026-02-04
+AI_prompt: false
+AI_output: true
+project:
+  - DCCE_CRDB
+type:
+  - ai_output
+---
 
 The imperative to develop a standardized Climate Risk Common Data Model (CDM) arises from the increasing complexity of "Hybrid Risk" assessments, which seek to unify probabilistic physical simulations with indicative heuristic indices. In the contemporary risk management landscape, the integrity of such models is often compromised by semantic drift, the conflation of raw data with derived metrics, and an inability to audit the judgment-based transitions from evidence to assessment. To resolve these challenges, this report provides an exhaustive benchmarking of the proposed Hybrid Risk Data Model against international standards for statistical metadata exchange (ISO 17369), foundational ontologies (UFO and CCO), disaster risk data dictionaries (Oasis OED, UNDRR Sendai, ISO 31010), and provenance tracking (W3C PROV-O). The objective is to validate a conceptual architecture that ensures semantic consistency across disjoint lineage paths while guaranteeing a strict, auditable separation between factual evidence and professional judgment.
 

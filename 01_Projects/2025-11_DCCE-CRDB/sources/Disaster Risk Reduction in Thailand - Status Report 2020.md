@@ -12,6 +12,7 @@ authors:
 year:
 relevance_to: "[[]]"
 key_findings: []
+sticker: emoji//1f4d5
 ---
 Mentions the need to align with CCA
 

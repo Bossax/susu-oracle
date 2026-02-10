@@ -1,13 +1,15 @@
 ---
 type:
   - ai_output
-status: raw
+status: current
 tags: []
 relevance_to: "[[]]"
 created: 2026-01-13
 last_updated:
 AI_prompt: false
 project:
+AI_output: true
+sticker: emoji//1f916
 ---
 # canonical data model
 A canonical data model (CDM) standardizes data entities, structures, relationships, and rules into a common, application-independent format to enable seamless data exchange across diverse systems.bmc+1​

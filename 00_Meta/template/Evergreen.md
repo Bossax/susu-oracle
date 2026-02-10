@@ -1,7 +1,10 @@
 ---
-type: evergreen
-tags:
-parent: "[["
-last_updated: 2026-01-09
-status: " "
+type: ""
+tags: []
+source:
+authors: []
+year:
+relevance_to: "[[]]"
+key_findings: []
+status: evergreen
 ---
