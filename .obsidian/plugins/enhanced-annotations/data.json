@@ -111,7 +111,10 @@
     "truncateFileName": false
   },
   "idling": {
-    "daysUnused": []
+    "daysUnused": [
+      "2026-02-10",
+      "2026-02-11"
+    ]
   },
   "clipboard": {
     "templates": {

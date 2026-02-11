@@ -10,6 +10,7 @@ related_hypothesis: "[[Synchronize BTR project with other 2 projects ]]"
 ---
 >[!note] Change log
 > v1: Created based on Kick-off meeting and Workplan Discussion (15 Dec 2025)
+> v2: Updated timeline per 2026 Integrated Roadmap. Added Progress Meeting milestones and Task Force synergy steps.
 
 This implementation plan translates the Terms of Reference (TOR) and the workplan discussion into a coherent technical roadmap. It emphasizes institutional alignment, governance clarification, and strategic planning rather than software development. The goal is to create a "Targeted NFCS" that connects the Thai Meteorological Department (TMD) with the urban sector's climate information needs.
 
@@ -54,11 +55,12 @@ The project is organized into three main phases (Tasks) that function as Work Pa
 **Objective:** Establish the project foundation, define the detailed workplan, and begin the legal/institutional review.
 
 ### Key activities and timeline
-1. **Kick-off and Workplan Design (Nov – Dec 2025):** Finalize the detailed activities and timeline with TMD. The **Inception Report** (Deliverable 1.1) is due by **19 Dec 2025** 
+1. **Kick-off and Workplan Design (Nov – Dec 2025):** Finalize the detailed activities and timeline with TMD. The **Inception Report** (Deliverable 1.1) is due by **19 Dec 2025**
 2. **Mandate & Policy Review** (Jan 2026): Analyze the **Climate Change Act** and **TMD’s 5-Year Master Plan**. Conduct Key Informant Interviews (KIIs) to clarify mandates. Develop an **"Engagement Playbook"** to help TMD navigate institutional laws and stakeholder engagement.
-3. **Governance Structure Proposal (Feb – Mar 2026):** Draft simple diagrams of governance arrangements and facilitate internal discussions to clarify roles
+3. **Governance Structure Proposal (Feb – Mar 2026):** Draft simple diagrams of governance arrangements and facilitate internal discussions to clarify roles.
+4. **Progress Meeting #1 (Jan 2026):** Present stakeholder mapping and KII plan.
 
-**Deliverable:** 
+**Deliverable:**
 1. **Detailed Workplan (Inception Report):** 19 Dec 2025.
 2. **Report on Governance Implications (D1.2):** Findings generated Jan-Mar, final report submitted June 2026.
 

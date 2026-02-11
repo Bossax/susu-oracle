@@ -20,6 +20,7 @@ last_updated: 2026-01-14
 > - v5: starting adaptation M&E and baseline development
 > - v6: proofing the strategy from external risks e.g. conflict with the CU research team's work 
 > - v7: major change - adaptation M&E platform based on NAP Action Plan indicators [[2026-01-13]]
+> - v8: Updated to align with 2026 Consolidated Timeline (Jan-Apr Roadmap).
 
 ## Overview and Approach
 
@@ -96,12 +97,16 @@ _Outputs:_ verified datasets; caveat register.
 _Focus:_ completeness and permissions.  
 _Constraints:_ response time; confidentiality.
 
-**4. Synthesis & gap note** (Feb–mid‑Mar)  
-_Action:_ harmonise datasets; produce baseline chapter inputs and a gap analysis that informs M&E prioritisation.  
-_Outputs:_ Baseline Assessment; indicator matrix; gap note.  
-_Focus:_ immediacy of use for WP‑4 and WP‑5.  
+**4. Synthesis & gap note** (Feb–mid‑Mar)
+_Action:_ harmonise datasets; produce baseline chapter inputs and a gap analysis that informs M&E prioritisation.
+_Outputs:_ Baseline Assessment; indicator matrix; gap note.
+_Focus:_ immediacy of use for WP‑4 and WP‑5.
 _Constraints:_ late arriving data.
 **Note:** The systematic L&D and Climate Impact literature review is formally deferred until after the February deliverable submission to prioritize immediate baseline gaps.
+
+**5. Joint Risk Review (Jan 2026)**
+_Action:_ Collaborate with CRDB/CRI teams to review climate risks across 6 NAP Sectors (Water, Agriculture, Tourism, Health, Natural Resources, Human Settlement) to inform the BTR Adaptation Chapter.
+_Outputs:_ Initial Risk Narrative for Adaptation Chapter.
 
 ---
 

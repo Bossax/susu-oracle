@@ -7,7 +7,7 @@ start date: 2026-01-09T00:00:00.000Z
 due date: 2026-02-06T00:00:00.000Z
 color: var(--mk-color-green)
 ---
-# Where CDM Fits: Mapping to TOR Clauses
+P# Where CDM Fits: Mapping to TOR Clauses
 
  **Implicit Requirements That Demand a CDM:**
 
@@ -39,8 +39,8 @@ https://drive.google.com/file/d/1l48sVaKuFjx-iAfoAxgkyR9qincLlOHM/view?usp=shari
 - A Hazard Event CAN affect multiple Exposed Assets (many-to-many through Impact Assessment)
 
 ---
-
-# First Draft of the Conceptual Data Model for IVRA Domain
+# Archived
+## A) First Draft of the Conceptual Data Model for IVRA Domain (#archived)
 The draft is based on deep research results and project documents
 >[!Document]
 > Deep research note
@@ -120,61 +120,7 @@ erDiagram
 ```
 
 ---
-
-# Expanded Subject Areas (Feb 10 Update)
-
-Based on benchmarking with **A-PLAT (Japan)**, **KLiVO (Germany)**, and **Climate-ADAPT (EU)**, and analysis of DCCE "Orphaned" products (SAR, Eco-School, T-PLAT), the CDM is expanded into three new domains to bridge the "Science-to-Action" gap.
-
-## 1. Adaptation & Response Domain
-*Focus: Transforming risk information into fundable projects and tracking implementation.*
-
-- **`ADAPTATION_OPTION`**
-    - **Definition:** A library of standardized solutions (e.g., NbS Mangrove Restoration, Early Warning Systems).
-    - **Attributes:** Technology Readiness Level (TRL), Sector (NAP-aligned), estimated CBA ratio.
-- **`ADAPTATION_PROJECT`**
-    - **Definition:** A specific instance of an option applied to a `SPATIAL_UNIT`.
-    - **Relationship:** Linked to `RISK_ASSESSMENT` to justify the business case.
-- **`FUNDING_SOURCE`**
-    - **Definition:** Tracking the origin of capital (Budget, GCF, GEF, Private).
-
-## 2. Activity & Audit Domain (Management Tracking)
-*Focus: Accommodating DCCE management platforms like Eco-School and Green City (SAR).*
-
-- **`MANAGEMENT_PROGRAM`**
-    - **Definition:** The high-level initiative (e.g., "National Eco-School Network").
-- **`PARTICIPANT_ENTITY`**
-    - **Definition:** The school, municipality, or community group enrolled in the program.
-- **`AUDIT_RECORD`**
-    - **Definition:** The result of a self-assessment or external audit (e.g., SAR scores).
-    - **Business Rule:** Allows querying "Risk vs. Preparedness" (e.g., "Show me Eco-School scores in High-Flood-Risk basins").
-
-## 3. Knowledge & Content Domain
-*Focus: Bridging the "Awareness" gap via T-PLAT qualitative content.*
-
-- **`KNOWLEDGE_ASSET`**
-    - **Definition:** Qualitative resources (Infographics, Case Studies, Best Practice PDFs).
-- **`CONTENT_TAG`**
-    - **Definition:** Dynamic semantic links that bind a document to a physical `HAZARDOUS_EVENT` or a `SPATIAL_UNIT`.
-
-```mermaid
-erDiagram
-    %% --- ADAPTATION & RESPONSE ---
-    ADAPTATION_OPTION ||--o{ ADAPTATION_PROJECT : "instantiates"
-    ADAPTATION_PROJECT }|--|| SPATIAL_UNIT : "located_at"
-    ADAPTATION_PROJECT }|--o| RISK_ASSESSMENT : "addresses"
-    ADAPTATION_PROJECT }|--o{ FUNDING_SOURCE : "funded_by"
-    
-    %% --- ACTIVITY & AUDIT (Management) ---
-    MANAGEMENT_PROGRAM ||--|{ PARTICIPANT_ENTITY : "enrolls"
-    PARTICIPANT_ENTITY ||--o{ AUDIT_RECORD : "undergoes"
-    PARTICIPANT_ENTITY ||--|| SPATIAL_UNIT : "situated_in"
-    
-    %% --- KNOWLEDGE MANAGEMENT ---
-    KNOWLEDGE_ASSET }|--|{ CONTENT_TAG : "classified_by"
-    CONTENT_TAG }|..o| HAZARDOUS_EVENT : "references"
-    CONTENT_TAG }|..o| ADAPTATION_OPTION : "illustrates"
-```
-
+# B) CDM of the IVRA domain as of Feb 5
 
 Additional context was given, including
 
@@ -185,10 +131,7 @@ Additional context was given, including
 >4. [[Spatial climate risk map DCCE v1]]
 >5. [[Sources/Spatial climate risk map DCCE v2|Spatial climate risk map DCCE v2]]
 
-This context informs the existing use cases of climate risk data products to align the CDM to.
-
-Below is the summary
-# CDM of the IVRA domain as of Feb 5
+This context informs the existing use cases of climate risk data products to align the CDM to best practices.
 
 The following summary traces the evolution of the CDM, highlighting the specific architectural decisions made to bridge the gap between "Hard Science" rigor and "Soft Science" policy requirements.
 
@@ -317,7 +260,7 @@ erDiagram
 
 ---
 
-# CDM of the Resilience Domain
+# C) CDM of the Resilience Domain
 
 The design of this domain is based on [[CRI Phase 2 Methodology]] and [[Approaches of index development - concensus]]. These files give the context of how "indicators" are conceptualized. 
 
@@ -430,3 +373,60 @@ erDiagram
 
     VULNERABILITY_DETERMINANT }|--o{ COMPOSITE_INDEX : feeds_into
 ```
+
+
+# D) Expanded Subject Areas (Feb 10 Update)
+
+Based on benchmarking with **A-PLAT (Japan)**, **KLiVO (Germany)**, and **Climate-ADAPT (EU)**, and analysis of DCCE "Orphaned" products (SAR, Eco-School, T-PLAT), the CDM is expanded into three new domains to bridge the "Science-to-Action" gap.
+
+
+## 1. Adaptation & Response Domain
+*Focus: Transforming risk information into fundable projects and tracking implementation.*
+
+- **`ADAPTATION_OPTION`**
+    - **Definition:** A library of standardized solutions (e.g., NbS Mangrove Restoration, Early Warning Systems).
+    - **Attributes:** Technology Readiness Level (TRL), Sector (NAP-aligned), estimated CBA ratio.
+- **`ADAPTATION_PROJECT`**
+    - **Definition:** A specific instance of an option applied to a `SPATIAL_UNIT`.
+    - **Relationship:** Linked to `RISK_ASSESSMENT` to justify the business case.
+- **`FUNDING_SOURCE`**
+    - **Definition:** Tracking the origin of capital (Budget, GCF, GEF, Private).
+
+## 2. Activity & Audit Domain (Management Tracking)
+*Focus: Accommodating DCCE management platforms like Eco-School and Green City (SAR).*
+
+- **`MANAGEMENT_PROGRAM`**
+    - **Definition:** The high-level initiative (e.g., "National Eco-School Network").
+- **`PARTICIPANT_ENTITY`**
+    - **Definition:** The school, municipality, or community group enrolled in the program.
+- **`AUDIT_RECORD`**
+    - **Definition:** The result of a self-assessment or external audit (e.g., SAR scores).
+    - **Business Rule:** Allows querying "Risk vs. Preparedness" (e.g., "Show me Eco-School scores in High-Flood-Risk basins").
+
+## 3. Knowledge & Content Domain
+*Focus: Bridging the "Awareness" gap via T-PLAT qualitative content.*
+
+- **`KNOWLEDGE_ASSET`**
+    - **Definition:** Qualitative resources (Infographics, Case Studies, Best Practice PDFs).
+- **`CONTENT_TAG`**
+    - **Definition:** Dynamic semantic links that bind a document to a physical `HAZARDOUS_EVENT` or a `SPATIAL_UNIT`.
+
+```mermaid
+erDiagram
+    %% --- ADAPTATION & RESPONSE ---
+    ADAPTATION_OPTION ||--o{ ADAPTATION_PROJECT : "instantiates"
+    ADAPTATION_PROJECT }|--|| SPATIAL_UNIT : "located_at"
+    ADAPTATION_PROJECT }|--o| RISK_ASSESSMENT : "addresses"
+    ADAPTATION_PROJECT }|--o{ FUNDING_SOURCE : "funded_by"
+    
+    %% --- ACTIVITY & AUDIT (Management) ---
+    MANAGEMENT_PROGRAM ||--|{ PARTICIPANT_ENTITY : "enrolls"
+    PARTICIPANT_ENTITY ||--o{ AUDIT_RECORD : "undergoes"
+    PARTICIPANT_ENTITY ||--|| SPATIAL_UNIT : "situated_in"
+    
+    %% --- KNOWLEDGE MANAGEMENT ---
+    KNOWLEDGE_ASSET }|--|{ CONTENT_TAG : "classified_by"
+    CONTENT_TAG }|..o| HAZARDOUS_EVENT : "references"
+    CONTENT_TAG }|..o| ADAPTATION_OPTION : "illustrates"
+```
+

@@ -3,8 +3,8 @@ type:
   - strategy
 status:
   - current
-version: 3
-last_updated: 2026-02-03T08:05:39.000Z
+version: 4
+last_updated: 2026-02-10
 project:
   - DCCE_CRI
 related_hypothesis: "[[ ]]"
@@ -13,6 +13,7 @@ related_hypothesis: "[[ ]]"
 >- v1: project proposal submission
 >- v2: Update reflecting "Middle Path" strategy (Capacity Tagging) and confirmation of full provincial data availability.
 >- v3: include more detail of phase 1 implementation
+>- v4: Integrated Inception Report deadline (Jan 7) and Gap Analysis milestones per 2026 Roadmap.
 
 
 
@@ -38,7 +39,7 @@ The **Climate Risk Index (CRI) Phase 2** project builds on Phase 1 to develop 
 **Inputs / Dependencies** – None. This package starts the project and informs later WPs.
 
 **Expected Outputs / Deliverables**
-- Inception Report (Thai language with digital copies) delivered within 30 days.
+- Inception Report (Thai language with digital copies) delivered within 30 days (**Jan 7, 2026**).
 - Detailed project schedule and risk register.
     
 **Team Roles and Responsibilities** – Project Manager leads planning, with input from climate‐change, policy‑planning and natural‑resource experts. Research assistants compile data and prepare the report.
@@ -83,7 +84,7 @@ here is a document on [[CRI Phase 1 Methodology]]
 
 **Quality Assurance and Review** – Cross‑validate findings with domain specialists and DCCE. Maintain a data‑provenance log documenting sources and quality checks.
 
-**Timeline and Milestones** – Months November 2025 - February 2026: complete literature review and gap analysis.
+**Timeline and Milestones** – Months November 2025 - February 2026: complete literature review and gap analysis (Deliver Gap Report by **Feb 28**).
 
 
 ### WP 3 – Development of Improved Impact and Resilience Indices

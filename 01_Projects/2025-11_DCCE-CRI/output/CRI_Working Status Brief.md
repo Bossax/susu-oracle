@@ -2,9 +2,9 @@
 type:
   - strategy
 status: "\n"
-version: 2
+version: 3
 created: 2026-02-03T08:13:47.000Z
-last_updated: 2026-02-03
+last_updated: 2026-02-10
 project:
   - DCCE_CRI
 related_hypothesis: "[[ ]]"
@@ -16,62 +16,37 @@ related_hypothesis: "[[ ]]"
 
 # 1. Current project health & priority
 
-The project status is **Stable but Pivot-Critical**. We have two parallel priorities: **1) Methodological Diplomacy** (resolving Phase 1 data authority issues via "Constrained Redistribution") and **2) Resilience Profiling** (executing the Phase 2 shift to "Coping/Adaptive/Transformative" capacities). The immediate goal is to finalize the "Hybrid Data" methodology to secure line agency buy-in while simultaneously tagging the administrative data for the new index.
+**Stable but Critical.** We are moving into the **Methodological Validation** phase. The priority is to confirm that the "Hybrid Data" approach (Constrained Redistribution) is acceptable to DCCE and stakeholders before mass production. We are simultaneously running the "Gap Analysis" to ensure we don't produce a "False Zero" map.
 
 # 2. Near‑term focus (next 2–4 weeks)
 
-1. **Methodology Note (WP2):** Draft the "Hybrid Data" defense strategy for the Inception Report (Satellites = Disaggregation, not Replacement).
-    
-2. **Gap Flagging (WP2):** Run the historical hazard cross-check to flag "Administrative Gaps" (Disaster Yes / Relief No) to prevent "False Zeros."
-    
-3. **Capacity Tagging (WP3):** Continue the systematic review of administrative datasets (LPA, Sustainable City), tagging indicators for the Resilience Index.
-    
-4. **Redistribution Setup (WP3):** Configure the dasymetric workflow using **WorldPop (100m)** for population and **Agri-Map + ESA WorldCover** for agriculture.
-    
-5. **Visualization Design:** Draft the "Capacity Radar Chart" mockups and the "District Hotspot Map" comparisons.
-    
+1.  **Submit Inception Report:** Finalize and submit by **Jan 7**.
+2.  **Gap Analysis & Data Flags (WP2):** Complete the cross-check of Relief Payments vs. Satellite Hazards to create the "Administrative Gap" flag layer.
+3.  **Methodology Defense (WP2):** Write the technical note defending the use of WorldPop/ESA data as a *disaggregation tool* for official stats, not a replacement.
+4.  **Preliminary Readiness Index (WP3):** Begin tagging the "Sustainable City" and "LPA" datasets to build the first draft of the Readiness/Capacity Index.
+5.  **Data Acquisition:** Secure access to the raw "Relief Payment" databases from DOPA/Agriculture.
 
 # 3. Key decisions & assumptions to remember
 
-- **Strategy Pivot:** We are moving to a **"Capacity Profile"** approach (Coping/Adaptive/Transformative) using synthesized national data.
-    
-- **Constrained Redistribution:** All satellite-derived maps must sum **exactly** to DOPA official district counts to ensure political auditability.
-    
-- **Metric Definition:** The "Economic" data is **Government Relief** (Fiscal), not Total Physical Damage.
-    
-- **The "Latent" Compromise:** Excess population found by satellites will be separated into a "Latent Population" layer, preserving the validity of official DOPA numbers.
-    
-- **Data Assumption:** We assume binary administrative data (Yes/No) can be aggregated into meaningful "Structural Readiness" scores.
-    
+-   **"Constrained Redistribution" is Non-Negotiable:** To avoid political rejection, all high-res maps must sum exactly to official district totals.
+-   **Fiscal Relief Index:** We are measuring *Government Response* (Fiscal), not total physical damage. This distinction must be clear.
+-   **Binary Data Strategy:** We assume that aggregating multiple "Yes/No" administrative indicators will create enough variance for a meaningful Readiness Index.
+-   **Urban Blindspot:** We must use "Commercial/Industrial Land Use" as a proxy for urban exposure, as agricultural relief data will miss these areas.
 
 # 4. Imminent milestones & deadlines
 
-- **Feb 15, 2026:** Final "Hybrid Data Methodology Note" (Internal Review) & Revised Impact Formula.
-    
-- **Feb 28, 2026:** Completion of Gap Analysis Report (WP2) with "Data Quality Flags."
-    
-- **March 2026:** First Consultation Workshop – Presentation of the "Capacity Profile" & "Constrained Map" concept.
-    
-- **April 2026:** Start of District-level Map Production.
-    
+-   **07 Jan 2026:** Submit Inception Report.
+-   **28 Feb 2026:** Completion of Gap Analysis Report (WP2).
+-   **March 2026:** First Consultation Workshop (Methodology & "Capacity Profile" concept).
 
 # 5. Short‑term risks & watchpoints
 
-- **The "Correction" Insult:** Presenting global data as "better" than DOPA risks rejection; we must frame it as a "Visualization Tool" for official stats.
-    
-- **Binary Data "Clumping":** Aggregating Yes/No administrative data may result in identical scores for many provinces; a weighting strategy is needed.
-    
-- **Zero-Data Distortion:** Dasymetric mapping of a "Zero Relief" province produces a high-resolution map of nothing; the "Gap Flag" protocol must be rigorous.
-    
+-   **Data Access Delay:** If DOPA/Agencies delay sharing the raw relief microdata, WP2 (Gap Analysis) stalls.
+-   **"False Zeros":** High risk that provinces with poor reporting appear "Low Risk." The "Gap Flag" protocol is the only defense.
+-   **Methodology Rejection:** Stakeholders might still view satellite data as "foreign/unofficial" despite the constrained approach.
 
 # 6. Next sponsor/steering message
 
-- **Dual Progress:** We are advancing on two fronts: solving the Phase 1 "Data Conflict" and building the Phase 2 "Resilience Framework."
-    
-- **Risk Retired:** We have solved the data authority risk by using **"Constrained Redistribution"**—our high-resolution district maps will **match official Ministry totals exactly**.
-    
-- **Strategic Pivot:** We are ready to present the **"Capacity Profile"** (Radar Charts) and **"Fiscal Relief Index"** concepts.
-    
-- **Best of Both Worlds:** We combine the _Legal Authority_ of DOPA/Agri-Map with the _Spatial Precision_ of WorldPop/ESA Satellites.
-    
-- **Next Step:** We are drafting a "Methodology Note" to explain this safe, hybrid approach at the March workshop.
+-   **Inception Ready:** Project Inception Report is ready for submission (Jan 7).
+-   **Problem Solved:** We have a solution for the "Data Conflict" risk: **Constrained Redistribution**. This allows us to use high-tech satellite data while matching official ministry numbers exactly.
+-   **New Insight:** We are developing a **"Readiness Index"** using existing administrative data (LPA/Sustainable City) to show *why* some provinces cope better than others, not just *where* disaster strikes.

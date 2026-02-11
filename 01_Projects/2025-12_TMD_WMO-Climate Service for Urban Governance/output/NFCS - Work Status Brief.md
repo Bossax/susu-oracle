@@ -1,7 +1,7 @@
 ---
 type: strategy
 status: current
-version: 3
+version: 4
 created: 2025-12-15
 project:
   - TMD-WMO NFCS
@@ -9,60 +9,42 @@ related_hypothesis: "[[NFCS - Implementation Plan]]"
 ---
 >[!note] Change Log
 >15 Dec 2025: confirmation of work plan with TMD
+>10 Feb 2026: Updated per 2026 Master Timeline. Confirmed workshop dates and "Governance" focus.
 
-
-**1. Current project health & priority** The project is **Green** but schedule pressure is increasing due to the confirmed workshop date (Mar 9-13). The immediate priority is finalizing the **Policy & Mandate Review** and the **Stakeholder Map** (with strict attendee criteria) in January to ensure the February data collection runs smoothly .
+**1. Current project health & priority**
+The project is **Green (On Track)** but entering a high-pressure phase. The **Consultation Workshop** is locked for **Mar 9-13**. Priority is now on **Stakeholder Mapping** (to ensure the right people are invited) and **Policy Review** (to frame the workshop discussion correctly).
 
 **2. Near‑term focus (next 2–4 weeks)**
 
-1. **Policy Review:** Analyze the **Climate Change Act**, TMD Act, and  TMD’s **5-Year Master Plan** to understand legal mandates.
-    
-2. **Stakeholder Criteria:** Draft specific requirements for workshop representatives to avoid "tokenism" (wrong participants).
-    
-3. **Task Force Synergy:** Meet with the **Urban Act** project team to discuss piggybacking on their Task Force structure.
-    
-4. **Progress Meeting #1:** Prepare findings for the **Jan 2026** meeting (Stakeholders + KII Plan).
-    
-5. **Budget Analysis:** Begin assessing how "Climate Services" can be framed as "Technical Capacity" to ensure future government funding.
-    
+1.  **Stakeholder Mapping (Jan):** Finalize the invitee list with strict "Technical Qualification" criteria to avoid tokenism.
+2.  **Mandate Review (Jan):** Analyze the Climate Change Act and TMD Master Plan to define the legal boundary for climate services.
+3.  **KII Preparation (Feb):** Launch Key Informant Interviews (KIIs) and the Baseline Survey to gather data *before* the workshop.
+4.  **Workshop Logistics:** Confirm venue and send invitations for the Mar 9-13 event.
+5.  **Task Force Strategy:** Initiate discussions with the Urban Act team to piggback on their Task Force structure.
 
 **3. Key decisions & assumptions to remember**
 
-- **Workshop Date:** Fixed for **9–13 March 2026**; Baseline Report draft is required _before_ this date.
-    
-- **Task Force:** We assume we can leverage the **Urban Act Task Force** rather than creating a new body from scratch.
-    
-- **Budgeting:** "Climate Services" may not qualify for "Digital Infrastructure" budget; we must frame them as "Capacity Development".
-    
-- **Strategy Status:** TMD currently lacks a proactive Climate Strategy; this project must fill that gap.
-    
+-   **Workshop is Fixed:** March 9-13 is the hard deadline. Baseline data must be ready to present.
+-   **Governance over Tech:** This project is about *Institutional Mandates*, not building software.
+-   **Urban Act Synergy:** We assume we can leverage the Urban Act Task Force. If that fails, we need a backup plan for governance.
+-   **"Capacity" not "Infrastructure":** We frame climate services as "Technical Capacity Development" to fit budget rules.
 
 **4. Imminent milestones & deadlines**
 
-- **Jan 2026:** Progress Meeting #1 (Stakeholder Map & KII Plan).
-    
-- **Feb 2026:** Launch of KIIs and Questionnaire.
-    
-- **Early Mar 2026:** Draft Baseline Assessment Report complete (Internal Deadline).
-    
-- **9–13 Mar 2026:** Consultation Workshop #1.
-    
+-   **Jan 2026:** Progress Meeting #1 (Stakeholder Map & KII Plan).
+-   **Feb 2026:** Launch of Baseline Survey.
+-   **Early Mar 2026:** Draft Baseline Assessment Report (Internal).
+-   **9–13 Mar 2026:** Consultation Workshop #1 (Critical Milestone).
 
 **5. Short‑term risks & watchpoints**
 
-- **Tokenism:** Risk of agencies sending non-technical staff if we don't set strict attendee criteria.
-    
-- **Budget Eligibility:** Risk that the final Action Plan is unfundable if not aligned with Ministry of Digital Economy's "Infrastructure" definitions.
-    
-- **Access:** Need timely access to TMD’s internal **5-Year Master Plan** and Urban Act outputs.
-    
+-   **Wrong People:** If agencies send junior staff to the workshop, we can't make policy decisions.
+-   **Survey Silence:** Risk of low response rate to the baseline survey. Need a "Chaser" strategy.
+-   **Mandate Conflict:** Potential resistance from agencies (DDPM/DPT) if they feel TMD is encroaching on their territory.
 
 **6. Next sponsor/steering message**
 
-- **Milestone:** Workshop date confirmed for **Mar 9–13**; we are accelerating the reporting timeline to match.
-    
-- **Strategy:** We are exploring synergy with the **Urban Act Task Force** to streamline governance.
-    
-- **Request:** We need access to the **TMD 5-Year Master Plan** and **Urban Act outputs** to align our strategic roadmap.
-    
-- **Action:** We are drafting strict **participant criteria** for the workshop to ensure meaningful engagement.
+-   **Workshop Locked:** We are full steam ahead for the **Mar 9-13 Consultation Workshop**.
+-   **Mandate Review:** We are currently analyzing the legal landscape (Climate Change Act) to ensure our proposal is legally sound.
+-   **Stakeholder Quality:** We are setting strict criteria for workshop attendees to ensure a high-level technical discussion.
+-   **Synergy:** We are actively coordinating with the Urban Act team to avoid duplicating governance structures.
