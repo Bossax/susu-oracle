@@ -1,5 +1,5 @@
 ---
-status: raw
+status: archived
 tags: []
 created:
 last_updated:

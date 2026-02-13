@@ -1,7 +1,7 @@
 ---
 type:
   - Artifact
-status: raw
+status: current
 version: 1
 tags:
   - DRM

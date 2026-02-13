@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "240da284e1db100a",
+            "id": "4d50614197d1f55f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Projects/2025-11_DCCE-CRDB/task/plans/Detailed_CDM_Design_Plan.md",
+                "file": "01_Projects/2025-11_DCCE-CRDB/task/Conceptual Data Model for climate risk and adaptation data system.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,43 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Detailed_CDM_Design_Plan"
+              "title": "Conceptual Data Model for climate risk and adaptation data system"
+            }
+          },
+          {
+            "id": "0cf21112723dd838",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01_Projects/2025-11_DCCE-CRDB/task/National Climate Adaptation Information Framework.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "National Climate Adaptation Information Framework"
+            }
+          },
+          {
+            "id": "12726085005fe51a",
+            "type": "leaf",
+            "state": {
+              "type": "mk-space",
+              "state": {
+                "path": "01_Projects/2025-11_DCCE-CRDB/notes"
+              },
+              "icon": "lucide-file",
+              "title": "notes"
             }
           }
         ]
@@ -85,7 +121,7 @@
             }
           },
           {
-            "id": "703b1d412a463bcc",
+            "id": "a1b0a7469254dee4",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -99,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 313.5
   },
   "right": {
     "id": "2620aee743c1548d",
@@ -115,13 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_Projects/2025-11_DCCE-CRDB/task/plans/Sitemap_CDM_Alignment_Test.md",
+                "file": "01_Projects/2025-06_Foresight/task/Presentation Deck for Children Foresight V2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Sitemap_CDM_Alignment_Test"
+              "title": "Outline of Presentation Deck for Children Foresight V2"
             }
           },
           {
@@ -238,44 +274,44 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "703b1d412a463bcc",
+  "active": "4d50614197d1f55f",
   "lastOpenFiles": [
-    "psi/data/pulse/desktop.ini",
-    "psi/data/desktop.ini",
-    "psi/data/pulse",
-    "psi/data",
-    "psi/memory/learnings/2026-02-11_crdb-status-update.md",
-    "psi/memory/retrospectives/2026-02/11/02.57_crdb-status-update.md",
-    "-p/desktop.ini",
-    "psi/memory/retrospectives/2026-02/11/desktop.ini",
-    "psi/memory/retrospectives/2026-02/11",
-    "-p",
-    "01_Projects/2026-01_DMCR- marine-soundscape/source/Establishing Underwater Soundscape.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/source/First basin scale spatial–temporal characterization of underwater sound in the Mediterranean Sea.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/source/Fish chorus separation.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/source/Gaps in marine soundscape assessments.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/source/Global Sounds -  Development of a low-cost hydrophone for research, education and community science.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/source/Method for characterizing soundscapes.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/source/PAMGuide.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/source/Webinar Briefing - Environmental and Acoustic Drivers of Fish Recruitment on Degraded Coral Reefs.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/source/Use of Underwater Acoustics in Marine Conservation and Policy - Previous Advances, Current Status, and Future Needs.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/source/Approaches to marine soundscape analysis.md",
-    "01_Projects/2025-11_DCCE-CRDB/output/CRDB - Implementation Plan.md",
+    "01_Projects/2025-11_DCCE-CRDB/notes/notes.md",
+    "01_Projects/2025-11_DCCE-CRDB/task/National Climate Adaptation Information Framework.md",
     "01_Projects/2025-11_DCCE-CRDB/task/Conceptual Data Model for climate risk and adaptation data system.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/notes/Experiment design for underwater soundscape study.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/notes/Design Evolution Report - Shallow Water Hydrophone Mooring System.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/notes/Subsea Sensor Deployment Principles.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/notes/Hydrophone Spec.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/notes/Marine soundscape project elements.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/notes/Sound Level Modeling.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/notes/Presentation flow.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/notes/PH 4454 - Lecture 1.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/notes/PiPou Talk - Not so silent world.md",
-    "01_Projects/2026-01_DMCR- marine-soundscape/notes/ใบเสนอราคา.md",
-    "01_Projects/2025-11_DCCE-CRDB/output/NCAIF_Material_Synthesis.md",
-    "01_Projects/2025-11_DCCE-CRDB/task/plans/desktop.ini",
-    "01_Projects/2025-11_DCCE-CRDB/task/plans",
-    "copilot/copilot-conversations/desktop.ini",
+    "01_Projects/2025-11_DCCE-CRDB/archived/archived.md",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions/Interview_Questions_กรมป้องกันและบรรเทาสาธารณะภัย.md",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions/detail/สภาอุตสาหกรรมแห่งประเทศไทย .md",
+    "psi/memory/learnings/2026-02-10_cdm-expansion.md",
+    "psi/memory/learnings/2026-02-10_environment-agnosticism.md",
+    "psi/memory/learnings/2026-02-13_interview-question-refinement.md",
+    "psi/inbox/focus-agent-main.md",
+    "psi/memory/retrospectives/2026-02/13/08.20_interview-questions-refinement.md",
+    "psi/memory/retrospectives/2026-02/13/05.52_interview-question-design-retrospective.md",
+    "psi/memory/retrospectives/2026-02/12/09.56_roo-skills-repo-creation.md",
+    "psi/memory/retrospectives/2026-02/12/15.29_recap-workflow-diagnosis.md",
+    "psi/memory/retrospectives/2026-02/12/15.27_recap-fix-implementation.md",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions/Interview_Questions_สภาอุตสาหกรรมแห่งประเทศไทย.md",
+    "psi/memory/retrospectives/retrospectives.md",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions/Interview_Questions_สำนักงานสภานโยบายการอุดมศึกษา_วิทยาศาสตร์_วิจัยและนวัตกรรมแห่งชาติ_สอวช.md",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions/Interview_Questions_สมาคมธนาคารไทย.md",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions/detail/detail.md",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions/detail/กรมป้องกันและบรรเทาสาธารณภัย.md",
+    "01_Projects/2025-11_DCCE-CRDB/task/Key Stakeholder Interview.md",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions/detail/สมาคมธนาคารไทย.md",
+    "99_Archive/Synergy among the project - data flow.md",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions/Interview_Questions_สำนักงานสถิติแห่งชาติ.md",
+    "psi/memory/learnings/2026-02-13_rrr-command-compatibility.md",
+    "nul",
+    "psi/memory/retrospectives/2026-02/13/desktop.ini",
+    "psi/memory/retrospectives/2026-02/13",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions/detail/desktop.ini",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions/detail",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions/desktop.ini",
+    "01_Projects/2025-11_DCCE-CRDB/output/Interview questions",
+    "04_Sources/LiveTranscribe_Transcript_110226.txt",
+    "00_Inbox/LiveTranscribe_Transcript_110226.txt",
+    "LiveTranscribe_Transcript_110226.txt",
     "psi/learn/Soul-Brews-Studio/oracle-v2/origin/frontend/src/assets/react.svg",
     "psi/learn/Soul-Brews-Studio/oracle-v2/origin/frontend/public/vite.svg",
     "psi/learn/Soul-Brews-Studio/oracle-v2/origin/frontend/dist/vite.svg",

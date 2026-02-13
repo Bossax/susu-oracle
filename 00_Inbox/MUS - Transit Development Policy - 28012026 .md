@@ -1,3 +1,20 @@
+---
+type:
+  - lecture note
+tags:
+  - lecture
+  - urban_mobility
+  - transportation
+  - TOD
+  - urban_planning
+  - master_urban_strategy
+source: lecture note
+authors: []
+year: "2026"
+relevance_to: "[[]]"
+key_findings: []
+status: evergreen
+---
 # The Iron Rails and the Invisible City: A Deep Dive into Urban Strategy
 
 **Date:** January 28, 2026 **Topic:** Transit-Oriented Development (TOD), Density, and Urban Strategy **Reading Time:** ~25 Minutes

@@ -1,5 +1,5 @@
 ---
-status: raw
+status: archived
 tags:
   - data_model
 created: 2026-02-05
@@ -9,7 +9,7 @@ AI_output: true
 project:
   - DCCE_CRDB
 type:
-  - Artifact
+  - deep_research
 ---
 #. The Semantic Schism: IPCC AR6 Risk Framework vs. Sendai Framework Data Requirements
 

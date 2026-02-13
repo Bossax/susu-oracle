@@ -2,12 +2,13 @@
 status: raw
 tags:
   - transportation
+  - master_urban_strategy
 created: 2026-01-21
 last_updated:
 AI_prompt: false
 project:
   - MUS
-type:
+type: note
 ---
 # Advantage of the rail system
 Right of way

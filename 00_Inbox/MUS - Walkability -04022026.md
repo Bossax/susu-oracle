@@ -1,3 +1,17 @@
+---
+type: lecture note
+tags:
+  - transportation
+  - urban_mobility
+  - "#master_urban_strategy"
+  - lecture
+source:
+authors: []
+year:
+relevance_to: "[[]]"
+key_findings: []
+status: evergreen
+---
 # The Democracy of the Sidewalk and the Fishbone City
 
 **A Deep Dive into Urban Mobility, Systemic Dead Ends, and the Governance of the Step**

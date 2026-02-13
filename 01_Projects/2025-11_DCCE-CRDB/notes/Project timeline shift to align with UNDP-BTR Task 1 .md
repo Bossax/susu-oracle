@@ -1,6 +1,6 @@
 ---
 type: idea
-status: raw
+status: archived
 tags: []
 created: 2025-12-18
 AI_prompt: true

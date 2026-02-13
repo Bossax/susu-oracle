@@ -1,5 +1,5 @@
 ---
-status: raw
+status: archived
 tags: []
 created: 2026-01-15
 last_updated: 2026-01-15
@@ -7,7 +7,7 @@ AI_prompt: false
 project:
   - DCCE_CRDB
 type:
-  - ai_output
+  - deep_research
 ---
 # Reconceptualizing Hazard in the Climate Risk Framework: Earth System Interactions, Exposure Dependencies, and the Role of Hazard Modification
 

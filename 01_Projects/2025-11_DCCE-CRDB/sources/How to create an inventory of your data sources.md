@@ -1,6 +1,6 @@
 ---
 type: web clipped
-status: raw
+status: archived
 tags:
 capture_date:
 url: https://www.lightsondata.com/how-to-create-an-inventory-of-your-data-sources/

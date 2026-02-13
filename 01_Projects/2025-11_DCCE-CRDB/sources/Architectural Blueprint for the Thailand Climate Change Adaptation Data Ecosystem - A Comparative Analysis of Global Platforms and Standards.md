@@ -9,6 +9,7 @@ project:
   - DCCE_CRDB
 type:
   - deep_research
+sticker: emoji//1f916
 ---
 https://gemini.google.com/gem/95e67d6d7720/baecb673c763f5e2
 ## 1. Strategic Imperative for a National Climate Data Ecosystem
