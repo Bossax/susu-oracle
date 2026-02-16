@@ -1,1 +1,0 @@
-![![Projects/2025-11_DCCE-CRDB/task/#*Board2]]![![Projects/2025-11_DCCE-CRDB/task/#*Board1]]

@@ -1,3 +1,0 @@
-
-- [ ] update kanban
-- [ ] update excel

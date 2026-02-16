@@ -1,0 +1,20 @@
+# Untracked pillars
+active/
+memory/logs/
+learn/
+
+# State files
+.awaken-state.json
+
+# Ignore Make.md Cache
+.makemd/
+
+# Ignore Make.md System Index (Auto-generated)
+.obsidian/
+
+# Window utility file
+desktop.ini
+
+*.xlxs
+*.csv
+*.pdf
