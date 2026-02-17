@@ -9,6 +9,7 @@ project:
   - DCCE_CRDB
 type:
   - Artifact
+sticker: emoji//1f5d2-fe0f
 ---
 >[!note] 
 >Analysis of the interview notes from UNDP project. These interviews were conducted with line agency representatives to understand their climate services, data products, and the use cases of their products and their needs.

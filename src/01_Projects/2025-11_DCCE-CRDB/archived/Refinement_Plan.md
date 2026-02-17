@@ -1,3 +1,13 @@
+---
+status: archived
+tags: []
+created: 2026-02-13
+last_updated: 2026-02-13
+AI_prompt: false
+AI_output: true
+project:
+type: artifact
+---
 # Plan for Refining Stakeholder Interview Questions
 
 This document outlines the plan to refine the interview questions for the remaining stakeholders, incorporating specific details about their projects and roles related to climate risk and adaptation.

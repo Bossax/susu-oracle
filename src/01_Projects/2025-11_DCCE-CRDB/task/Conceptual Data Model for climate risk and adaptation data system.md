@@ -7,7 +7,7 @@ start date: 2026-01-09T00:00:00.000Z
 due date: 2026-02-06T00:00:00.000Z
 color: var(--mk-color-green)
 ---
-P# Where CDM Fits: Mapping to TOR Clauses
+# Where CDM Fits: Mapping to TOR Clauses
 
  **Implicit Requirements That Demand a CDM:**
 
@@ -119,8 +119,9 @@ erDiagram
     RISK_ASSESSMENT }|--|| ADAPTATION_INTERVENTION : informs
 ```
 
----
-# B) CDM of the IVRA domain as of Feb 5
+
+
+## B) CDM of the IVRA domain as of Feb 5
 
 Additional context was given, including
 
@@ -221,7 +222,7 @@ erDiagram
 
 	**The Solution:** The **`ATTRIBUTION_LINK`** entity allows the database to formally record the _assertion of cause_. It answers the question: _"To what physical phenomenon do we attribute this specific economic loss?"_
 
-1. **How it reflects in the CDM (The Structure)**
+2. **How it reflects in the CDM (The Structure)**
 	In data modeling terms, `ATTRIBUTION_LINK` is an **Associative Entity** (sometimes called a Junction Table or Bridge Table). It acts as a "Universal Adapter" that sits between the **Outcome** (Loss) and the **Cause** (Hazard/Driver).
 	This structure allows the `LOSS_DAMAGE_RECORD` table to remain clean and standardized (Target A, B, C, D), regardless of whether the cause was a sudden shock or a slow stress.
 
@@ -260,7 +261,7 @@ erDiagram
 
 ---
 
-# C) CDM of the Resilience Domain
+## C) CDM of the Resilience Domain
 
 The design of this domain is based on [[CRI Phase 2 Methodology]] and [[Approaches of index development - concensus]]. These files give the context of how "indicators" are conceptualized. 
 
@@ -375,10 +376,9 @@ erDiagram
 ```
 
 
-# D) Expanded Subject Areas (Feb 10 Update)
+## D) Expanded Subject Areas (Feb 10 Update)
 
 Based on benchmarking with **A-PLAT (Japan)**, **KLiVO (Germany)**, and **Climate-ADAPT (EU)**, and analysis of DCCE "Orphaned" products (SAR, Eco-School, T-PLAT), the CDM is expanded into three new domains to bridge the "Science-to-Action" gap.
-
 
 ## 1. Adaptation & Response Domain
 *Focus: Transforming risk information into fundable projects and tracking implementation.*
@@ -430,3 +430,13 @@ erDiagram
     CONTENT_TAG }|..o| ADAPTATION_OPTION : "illustrates"
 ```
 
+
+---
+
+# E) To-do
+1. Refine Adaptation Planning subject. The current structure is based on ISO 14090
+	1. research on ISO 14090, focusing on Adaptation Plan section [[ISO 14090 2019   “Adaptation to climate change — Principles, requirements and guidelines]]
+	2. extract "decision-making" space processes and entities from [[Comprehensive Risk Management (CRM) - Full structure]]
+	3. analyze common structures 
+	4. design a new Adaptation Planning subject
+		1. [[Adaptation Planning refinement]] this note contains a summary of what I am thinking

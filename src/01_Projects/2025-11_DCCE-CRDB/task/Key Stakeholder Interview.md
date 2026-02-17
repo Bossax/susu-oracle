@@ -1,3 +1,6 @@
+---
+status: In Progress
+---
 # List of the stakeholders
 [20260115_DCCE_CRDB_รายชื่อหน่วยงานสัมภาษณ์](https://thecreagycom.sharepoint.com/:x:/s/DCCEClimateRiskDataBase/IQCmR0D2IIObRpnK9JUtg8GGAZTMQ0uX6tBC3zB0dwXx9yg?e=lbENBg)
 [[Stakeholder Interview List]]

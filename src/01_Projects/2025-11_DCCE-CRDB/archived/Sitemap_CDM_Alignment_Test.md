@@ -1,3 +1,14 @@
+---
+status: archived
+tags: []
+created: 2026-02-10
+last_updated: 2026-02-10
+AI_prompt: false
+AI_output: true
+project:
+  - DCCE_CRDB
+type: artifact
+---
 # CDM Applicability Test: Sitemap Alignment & Data Management
 
 ## 1. Overview

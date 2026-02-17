@@ -1,20 +1,20 @@
-# Untracked pillars
-active/
-memory/logs/
-learn/
-
 # State files
 .awaken-state.json
 
-# Ignore Make.md Cache
-.makemd/
+# Ignore obsidian artifact
+src/.makemd/
+src/.obsidian/
+src/.space/
 
-# Ignore Make.md System Index (Auto-generated)
-.obsidian/
-
-# Window utility file
+# --- Google Drive & System Artifacts (CRITICAL) ---
 desktop.ini
+Thumbs.db
+.DS_Store
+Icon?
+._*
 
+
+# Data files
 *.xlxs
 *.csv
 *.pdf

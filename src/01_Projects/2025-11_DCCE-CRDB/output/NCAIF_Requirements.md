@@ -1,5 +1,5 @@
 ---
-status: raw
+status: current
 tags: []
 created: 2026-02-10
 last_updated: 2026-02-10
@@ -45,22 +45,27 @@ The assessment of DCCE's current assets (Section 3.2) reveals the "raw material"
 - **Stage 5 (M&E) Gap:** Currently limited to activity tracking; needs "External Consumption Points" to link with the UNDP-BTR M&E framework.
 - **Loss & Damage (L&D):** Current systems focus on potential risk; NCAIF needs a specific branch for **Actual Loss & Damage (Historical)**.
 
-## 3. Refined NCAIF Taxonomy Structure (V1.1)
+## 3. Refined NCAIF Structure (V1.1) - User-Journey-Based
 
-Based on the Inception Report findings, the NCAIF structure is refined as follows:
+Based on the Inception Report findings and the cross-analysis, the NCAIF structure is refined to support distinct user journeys:
 
-- **Stage 1: Meteorology & Climate (Deep Modeling)**
-    - *Hierarchy:* Atmospheric -> Temperature/Precipitation -> Indices (SPI, etc.)
-    - *Metadata:* Technical (Resolution, Source Agency)
-- **Stage 2: IVRA (Deep Modeling - The Core)**
-    - *Hazards:* Flood, Drought, Heat, Storm, SLR (Aligned with ADPC/BTR)
-    - *Exposure:* Physical (Assets) vs. Social (Demographics)
-    - *Vulnerability:* Sensitivity factors vs. Adaptive Capacity
-    - *L&D:* Minimum Viable Dataset (MVD) entities (Sendai Targets A-G)
-- **Stage 3: Adaptation Measures (Shallow Modeling)**
-    - *Categories:* Type (Nature-based, Infrastructure, Policy), Sector (NAP 6), Scale (National/Local)
-- **Stage 4: Information Products (The "Showroom")**
-    - *Products:* Maps, Indices, Case Studies (Lineage traced to Stage 1 & 2)
+- **Homepage:** National Climate Overview, Quick Links, Climate Alerts
+
+- **For Policy Makers & Planners:**
+    - Understand the Risks: National & Provincial Risk Assessments, Future Climate Scenarios
+    - Develop a Plan: NAP Guidance, Adaptation Option Appraisal Tools, Financing & Investment
+    - Monitor & Evaluate: M&E Framework, National Progress Dashboard
+
+- **For Researchers & Academia:**
+    - Access Data: Open Data Portal (API Access), Climate Model Projections, Socio-Economic Data
+    - Collaborate: Research Network, Calls for Proposals
+    - Publish: Journal, Working Paper Series
+
+- **For Communities & Local Leaders:**
+    - What's Happening in My Area?: Local Risk Maps, Community Vulnerability Assessments
+    - What Can We Do?: Community-Based Adaptation Toolkit, Local Funding Opportunities, Success Stories
+
+- **Explore Our Work:** Projects & Initiatives, News & Events, About Us
 
 ## 4. Next Steps for NCAIF Preparation
 1.  **Extract Terms for Glossary:** Scrape definitions from the "IPCC AR6" and "Sendai Framework" references mentioned in the Inception Report.

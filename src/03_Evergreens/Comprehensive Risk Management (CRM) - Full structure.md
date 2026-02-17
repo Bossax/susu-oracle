@@ -119,7 +119,30 @@ Let’s go over the measure categories that we are familiar with
 
 These categories seem to operate separately and have different objectives, but they are just different approaches to tackling different risk layers.
 
-  
+## Selection of Measures
+
+The selection of risk reduction and adaptation measures is the phase where risk assessment results are translated into actionable planning. This process moves beyond simple risk identification to the design of interventions that avert, minimize, or address risks. The source outlines specific elements, frameworks, and processes to ensure measures are comprehensive and effective.
+
+**1. Identification Framework: Impact Chains** The primary framework for identifying measures is the use of **impact chains**. These conceptual models visualize the cause-effect relationships of hazards, exposure, and vulnerability. By mapping these cascades, planners can identify specific "weak spots" or entry points in the system where interventions can interrupt the risk cascade (UNDRR, 2022). This allows for the precise targeting of underlying risk drivers rather than treating symptoms.
+
+**2. Elements of a Multidisciplinary Portfolio** Effective adaptation requires a multidisciplinary approach that combines various types of measures to address complex risks. The source categorizes these into a broad portfolio:
+
+- **Structural/Hard Measures:** Engineering solutions such as dikes, improved irrigation systems, or renewable energy infrastructure (UNDRR, 2022).
+- **Non-structural/Soft Measures:** Capacity building, changes in social behavior, land-use planning laws, and early warning systems (UNDRR, 2022).
+- **Nature-based Solutions (NbS):** Ecosystem-based adaptation (e.g., mangrove reforestation, agroforestry) is highlighted as a "no- or low-regret" option that provides co-benefits and addresses transboundary risks (UNDRR, 2022),.
+- **Social Protection and Financial Measures:** Cash transfers, social insurance, and risk transfer instruments like climate insurance (UNDRR, 2022).
+- **Transformational Measures:** Actions that change the fundamental attributes of a system, such as livelihood diversification or human resettlement (UNDRR, 2022).
+
+**3. Prioritization Frameworks** Once potential measures are identified, they must be prioritized using specific frameworks:
+- **Risk Tolerance:** Measures should be selected based on societal valuation of which risks are acceptable, tolerable, or intolerable. This framework relies on engaging at-risk populations to define their tolerance levels, particularly for unquantifiable risks (UNDRR, 2022),.
+- **Decision-Support Tools:** The source recommends using established analytical tools to prioritize options under uncertainty. These include Cost-Benefit Analysis (CBA), Cost-Effectiveness Analysis (CEA), Multi-Criteria Analysis (MCA), and Robust Decision Making (RDM) (UNDRR, 2022).
+- **Specific Planning Tools:** Frameworks such as the Caribbean Climate Online Risk and Adaptation TooL (CCORAL) and the Community-based Risk Screening Tool (CRiSTAL) are cited as methods to support the design and revision of measures (UNDRR, 2022).
+
+**4. The Selection Process** The process of selecting measures must be inclusive and iterative:
+
+- **Co-design with Stakeholders:** The selection criteria and the relative weight of those criteria must be decided in consultation with a multisectoral planning team and at-risk populations. This ensures the measures address differentiated vulnerabilities (e.g., gender, poverty) (UNDRR, 2022),.
+- **Adaptive Management:** Given the dynamic nature of climate risk, the selection process is not a one-time event. It must be embedded in an adaptive management cycle supported by Monitoring, Evaluation, and Learning (MEL) frameworks. This allows for the adjustment of strategies as conditions change or new information becomes available (UNDRR, 2022),.
+- **Layering and Sequencing:** A comprehensive approach often requires combining measures (e.g., combining early warning systems with social protection payouts) and sequencing them to address prevention, preparedness, response, and recovery phases (UNDRR, 2022).
 
 ## 🧱 Risk layering
 
