@@ -1,11 +1,13 @@
 ---
-status: raw
+status: current
 tags: []
 created: 2026-02-02
 last_updated:
 AI_prompt: false
 project:
+  - DCCE_CRI
 type:
+  - note
 ---
 # Background
 Read the CRI_implementation_pland.md for the context

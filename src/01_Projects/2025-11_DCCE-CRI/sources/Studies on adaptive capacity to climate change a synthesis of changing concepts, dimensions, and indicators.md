@@ -10,6 +10,7 @@ authors: []
 year: "2025"
 relevance_to: "[[]]"
 key_findings: []
+sticker: emoji//1f4d5
 ---
 # Studies on adaptive capacity to climate change: a synthesis of changing concepts, dimensions, and indicators
 

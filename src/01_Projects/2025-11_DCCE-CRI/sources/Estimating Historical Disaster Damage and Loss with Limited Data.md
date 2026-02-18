@@ -9,6 +9,15 @@ capture_date: 2025-10-30
 origin_prompt:
 relevance_to: "[["
 AI_output: true
+topics:
+  - loss_and_damage
+  - historical_estimation
+phase_support:
+  - CRI_Phase_1
+evidence_type: ai_synthesis
+use_case:
+  - data_methods
+  - loss_estimation_design
 ---
 
 ## Introduction

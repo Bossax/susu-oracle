@@ -8,7 +8,8 @@ authors:
 year: "2025"
 relevance_to: "[[CRI Phase 1 Methodology]]"
 key_findings: []
-color: var(--mk-color-purple)
+color: ""
+sticker: emoji//1f4d5
 ---
 ## Tag: definition
 

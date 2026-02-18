@@ -5,6 +5,16 @@ created: 2026-01-29
 last_updated:
 AI_prompt: false
 AI_output: true
+topics:
+  - adaptive_capacity
+  - index_design
+phase_support:
+  - CRI_Phase_1
+  - CRI_Phase_2
+evidence_type: ai_synthesis
+use_case:
+  - capacity_concepts
+  - methodology_review
 project:
 type:
   - Artifact

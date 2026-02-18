@@ -5,10 +5,20 @@ created: 2026-01-29
 last_updated: 2026-02-02
 AI_prompt: false
 project:
-type:
+type: artifact
 aliases:
   - Idea / note
 sticker: emoji//1f916
+AI_output: true
+topics:
+  - resilience_measurement
+  - process_based_indicators
+phase_support:
+  - CRI_Phase_2
+evidence_type: ai_synthesis
+use_case:
+  - resilience_framework
+  - methodology_review
 ---
 # Process-Based Resilience Indicators
 

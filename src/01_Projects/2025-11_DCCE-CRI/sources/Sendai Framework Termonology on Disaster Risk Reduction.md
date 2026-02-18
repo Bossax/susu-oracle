@@ -11,6 +11,7 @@ type:
   - report
 aliases:
   - Idea / note
+sticker: emoji//1f4da
 ---
 > [!Document]
   [  Sendai Framework Terminology ](https://www.undrr.org/drr-glossary/terminology)

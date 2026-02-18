@@ -1,3 +1,10 @@
+---
+created:
+project:
+tags:
+status: current
+type: "plan "
+---
 # Session Plan: \Date - \Focus
 
 ## Objective

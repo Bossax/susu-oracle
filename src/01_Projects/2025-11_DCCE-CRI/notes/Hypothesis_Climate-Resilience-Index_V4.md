@@ -1,8 +1,7 @@
 ---
 type:
   - hypothesis
-status:
-  - archived
+status: archived
 version: 4
 parent_hypothesis: "[[Hypothesis_Climate-Resilience-Index_V3]]"
 created: 2025-10-17

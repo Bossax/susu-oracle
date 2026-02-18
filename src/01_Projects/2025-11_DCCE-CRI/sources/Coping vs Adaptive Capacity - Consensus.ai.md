@@ -5,7 +5,17 @@ tags:
 created: 2026-01-30
 last_updated: 2026-02-03
 AI_prompt: false
-AI_output: false
+AI_output: true
+topics:
+  - coping_capacity
+  - adaptive_capacity
+  - DRM_cycle
+phase_support:
+  - CRI_Phase_2
+evidence_type: ai_synthesis
+use_case:
+  - capacity_concepts
+  - conceptual_framework
 project:
 type:
 sticker: emoji//1f916

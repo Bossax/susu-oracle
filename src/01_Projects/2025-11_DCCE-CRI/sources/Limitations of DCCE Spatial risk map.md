@@ -1,7 +1,8 @@
 ---
-type: idea
+type: note
 status: current
-tags: []
+tags:
+  - DCCE
 created: 2025-10-28
 AI_prompt: false
 ---

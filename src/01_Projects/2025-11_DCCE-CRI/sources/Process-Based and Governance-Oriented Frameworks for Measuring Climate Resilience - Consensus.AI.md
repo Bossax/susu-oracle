@@ -5,6 +5,16 @@ created: 2026-02-02
 last_updated: 2026-02-02
 AI_prompt: false
 AI_output: true
+topics:
+  - resilience_measurement
+  - governance
+  - process_based_indicators
+phase_support:
+  - CRI_Phase_2
+evidence_type: ai_synthesis
+use_case:
+  - resilience_framework
+  - governance_processes
 project:
 type:
   - Artifact

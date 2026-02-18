@@ -2,8 +2,8 @@
 type:
   - Artifact
 status: current
-last_updated: 2026-02-03
-version: 2
+last_updated: 2026-02-18
+version: 4
 project:
   - DCCE_CRI
 related_hypothesis:
@@ -12,6 +12,8 @@ color: var(--mk-color-purple)
 >[!note] Change Log
 >- v1: approach summary with decision points
 >- v2: pivot project direction
+>- v3: clarification after meeting with TEI
+>- v4: corrected GPP denominator and data lineage per TEI 4 Feb 2026 note
 
 >[!Document]
 >1. [[Sectoral Adaptation Guideline Study and CRI pilot study]]
@@ -46,7 +48,7 @@ We retain the Germanwatch principle of equal weighting between Human and Economi
 |Dimension|Indicator|Weight|Rationale|
 |---|---|---|---|
 |**A. Human Impact**|**Fatalities & Affected (Relative)**|**50%**|Prioritizes impact per capita to ensure populous provinces don't skew the index simply due to size.|
-|**B. Economic Impact**|**Fiscal Relief per Sector GPP**|**50%**|Measures the _intensity_ of government financial strain relative to the size of the specific economic sector (Agriculture).|
+|**B. Economic Impact**|**Fiscal Relief per Provincial GPP (Total)**|**50%**|Measures the _intensity_ of government financial strain relative to total provincial economic output (sector split not yet available).|
 
 ### 2.2 Refined Formulas ⚠️ to be discussed
 
@@ -56,11 +58,20 @@ Unlike the Pilot, which summed Absolute and Relative values (double counting), w
 
 $$Score_{Human} = \frac{Fatalities}{Population_{District}} \times W_1 + \frac{Affected}{Population_{District}} \times W_2$$
 
-#### B. Economic Impact (Sector-Specific Normalization)
 
-_Correction from Pilot:_ We strictly divide Agricultural Relief by **Agricultural GPP**, not Total GPP. Dividing agricultural loss by Total GPP (which includes factories/services) falsely minimizes risk in industrialized provinces.
+#### B. Economic Impact (Fiscal Relief–Based)
 
-$$Score_{Economic} = \frac{Ag\_Relief\_Payment}{Ag\_GPP_{Prov}}$$
+The economic pillar is explicitly defined as a **Fiscal Relief Index** rather than total economic loss. It uses **recorded public relief and emergency spending** as the numerator, recognizing that:
+
+- Agricultural relief payments from the Office of Agricultural Economics (OAE) cover only a subset of affected land (typically up to 25 rai per farmer, as per current regulations).
+- Central emergency funds (เงินทดรองราชการ) are broader than household compensation alone and may fund response and early recovery activities via line agencies.
+
+We correct a core ambiguity from the Pilot by explicitly documenting the current denominator: **total provincial GPP (NESDC)** is used because sectoral GPP (agriculture vs non‑agriculture) is not yet available for all years. This introduces bias for provinces with low agricultural share, and will be refined once sector splits are obtained.
+
+$$Score_{Economic} = \frac{Ag\_Relief\_Payment}{GPP_{Prov\_Total}}$$
+
+> **Implication:** This is a **fiscal–response intensity** metric, not a complete damage estimate. Provinces with stronger reporting and more actively used relief channels may appear “higher risk” in fiscal terms even when private or uninsured losses are larger elsewhere.
+
 
 > **Note on Urban/Industrial Risk:** Since relief payments for factories are rare/non-existent in this dataset, Urban Economic Risk is calculated via a separate **Exposure Proxy** (Commercial Land Use) rather than historical loss data.
 
@@ -68,17 +79,28 @@ $$Score_{Economic} = \frac{Ag\_Relief\_Payment}{Ag\_GPP_{Prov}}$$
 
 We utilize a **Hybrid Data Model**. "Official Data" provides the _Magnitude_ (How much?), while "Global Data" provides the _Location_ (Where?).
 
+
+> [!Attention] Data Lineage Note (TEI–DDPM–OAE, meeting 4 Feb 2026):
+> - **Relief data** actually used in the TEI Pilot and in the current Phase 1 prototype comes from **OAE agricultural compensation (เงินเยียวยาเกษตรกร)**. There is **no monetary damage series from DDPM** in the index at this stage.
+> - **Human‑impact data** (deaths and affected people) are sourced from DDPM, but these are used only in the Human Impact pillar, not as monetary loss.
+> - **GPP denominator** currently refers to **total provincial GPP (NESDC)**, not agricultural GPP. This is a known bias until sectoral GPP can be separated.
+> - For many provinces and years, **loss/relief values are missing**, not zero; TEI did **not** impute or fill gaps.
+> - Bangkok and some industrial provinces have **casualty records** but very limited or no corresponding economic loss entries, especially outside agriculture.
+> - **Agricultural relief** is recorded based on compensation rules (capped area per farmer), which underestimates actual damage in large events.
+> - These characteristics justify treating the economic pillar as a **Fiscal Relief Index** and require explicit gap‑flagging (Section 6.1), instead of interpreting low values as low risk.
+
+
 ### 3.1 Dataset Catalog
 
-|Component|Role|Dataset Name|Source / Provider|Resolution|
-|---|---|---|---|---|
-|**Human Magnitude**|**Official Constraint**|**Population Registration (Tabien Baan)**|DOPA (Dept of Provincial Administration)|District (Amphoe)|
-|**Human Distribution**|**Spatial Weighting**|**WorldPop Unconstrained Global Mosaic**|University of Southampton / WorldPop|100m Raster|
-|**Human Distribution**|_Alternative/Validation_|**GHS-POP (Global Human Settlement)**|JRC (European Commission)|100m Raster|
-|**Economic Magnitude**|**Official Constraint**|**Disaster Relief Payments (4 Types)**|Office of Agricultural Economics / DDPM|Provincial|
-|**Economic Zoning**|**Value Potential**|**Agri-Map (Zoning by Agri-Map)**|LDD (Land Development Dept)|Vector (Poly)|
-|**Economic Extent**|**Physical Mask**|**ESA WorldCover v2021**|European Space Agency|10m Raster|
-|**Hazard Validation**|**Gap Flagging**|**GISTDA Flood/Drought Extent**|GISTDA|Raster|
+| Component              | Role                     | Dataset Name                          | Source / Provider                        | Resolution        |
+| ---------------------- | ------------------------ | ------------------------------------- | ---------------------------------------- | ----------------- |
+| **Human Magnitude**    | Official Constraint      | Population Registration (Tabien Baan) | DOPA (Dept of Provincial Administration) | District (Amphoe) |
+| **Human Distribution** | Spatial Weighting        | WorldPop Unconstrained Global Mosaic  | University of Southampton / WorldPop     | 100m Raster       |
+| **Human Distribution** | _Alternative/Validation_ | GHS-POP (Global Human Settlement)     | JRC (European Commission)                | 100m Raster       |
+| **Economic Magnitude** | Official Constraint      | Agricultural Relief Payments          | Office of Agricultural Economics (OAE)   | Provincial        |
+| **Economic Zoning**    | Value Potential          | Agri-Map (Zoning by Agri-Map)         | LDD (Land Development Dept)              | Vector (Poly)     |
+| **Economic Extent**    | Physical Mask            | ESA WorldCover v2021                  | European Space Agency                    | 10m Raster        |
+| **Hazard Validation**  | Gap Flagging             | GISTDA Flood/Drought Extent           | GISTDA                                   | Raster            |
 
 ## 4. Technical Implementation: Dasymetric Mapping
 
@@ -138,13 +160,20 @@ Bangkok and industrial estates often show "Zero Relief" despite high risk, ~~bec
 ### 6.1 The "Gap Flag" Protocol
 
 A major flaw in the Pilot was treating "Missing Data" as "Zero Risk."
-- **Protocol:** If `Hazard_Satellite = TRUE` AND `Relief_Official = 0`:
-    - **Flag:** "Administrative Gap" (Pink Code).
-    - **Action:** Exclude from the "Low Risk" ranking. Display as "Insufficient Data" on the map.
-        
 
-### 6.2 Definition of "Loss" ⚠️ to be decided
+- **Protocol:** If `Hazard_Satellite = TRUE` AND `Relief_Official = 0`:
+  - **Flag:** "Administrative Gap" (Pink Code).
+  - **Action:** Exclude from the "Low Risk" ranking. Display as "Insufficient Data" on the map.
+
+> [!attention]  Clarification from TEI (4 Feb 2026):
+> TEI confirmed that in the pilot datasets, a value of `0` in many provincial records often means “no report received” rather than “no damage”. No statistical gap filling was applied. This reinforces the need to treat `0` + observed hazard as an **Administrative Gap**, not a low‑risk signal.
+
+### 6.2 Definition of "Loss" and "Relief"
 
 The CRI calculates **Fiscal Vulnerability**, not Total Economic Loss.
-- _Excluded:_ Private insurance claims, unrealized opportunity costs, supply chain disruptions.
-- _Included:_ Direct government compensation payments (Kor-Or-Por/Vor-Por) and municipal emergency budget usage.
+
+- _Excluded:_ Private insurance claims, unrealised opportunity costs, and most indirect supply‑chain disruptions.
+- _Included:_ Direct government compensation payments (Kor-Or-Por/Vor-Por), central emergency funds (เงินทดรองราชการ) used for disaster response and early recovery, and agricultural relief payments recorded by OAE.
+
+> [!Important]
+>  In many pilot‑year files, the available “loss” variables are in fact **relief and emergency spending records**, not engineering damage assessments. Phase 1 therefore treats these as **fiscal response proxies**, and supplements them with exposure proxies in urban/industrial provinces where relief is structurally under‑reported.

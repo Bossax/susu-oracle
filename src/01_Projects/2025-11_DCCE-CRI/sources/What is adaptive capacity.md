@@ -1,7 +1,6 @@
 ---
 type:
-  - Artifact
-  - ai_output
+  - note
 status: current
 tags:
   - adaptive_capacity
@@ -9,7 +8,7 @@ tags:
 created: 2025-10-02
 last_updated: 2026-02-02
 AI_prompt: false
-banner: "https://cambridge-leadership.com/wp-content/uploads/2023/11/Adaptive-Capactiy-Profile.png"
+banner: https://cambridge-leadership.com/wp-content/uploads/2023/11/Adaptive-Capactiy-Profile.png
 banner_y: 0.5
 AI_output: false
 project:

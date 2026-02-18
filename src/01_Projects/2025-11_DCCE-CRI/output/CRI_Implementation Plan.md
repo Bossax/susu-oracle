@@ -3,8 +3,8 @@ type:
   - strategy
 status:
   - current
-version: 4
-last_updated: 2026-02-10
+version: 5
+last_updated: 2026-02-18
 project:
   - DCCE_CRI
 related_hypothesis: "[[ ]]"
@@ -14,6 +14,7 @@ related_hypothesis: "[[ ]]"
 >- v2: Update reflecting "Middle Path" strategy (Capacity Tagging) and confirmation of full provincial data availability.
 >- v3: include more detail of phase 1 implementation
 >- v4: Integrated Inception Report deadline (Jan 7) and Gap Analysis milestones per 2026 Roadmap.
+>- v5: Minor alignment with SES pivot documentation and Working Status Brief (no structural change to WPs).
 
 
 

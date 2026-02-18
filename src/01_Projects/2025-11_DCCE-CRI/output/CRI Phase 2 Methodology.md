@@ -20,6 +20,8 @@ related_hypothesis: "[[CRI pivoting to social-ecological system and context focu
 
 The objective of CRI Phase 2 is to deliver a policy-relevant tool for local decision-makers (municipalities/provinces) while adhering to the Terms of Reference (TOR) which mandates a "National Index."
 
+In this phase we explicitly move **beyond a pure loss/risk ranking** toward a **Resilience Capacity Profile**, accepting a managed trade‑off between strict cross‑provincial comparability and richer context‑specific insight.
+
 We recognize a spectrum of implementation approaches:
 
 1. **Universal Comparability (The "Technocratic" End):** Standardized, asset-based indices (e.g., Germanwatch). Easy to rank, but often lacks local context and actionable insight.
@@ -31,7 +33,12 @@ We recognize a spectrum of implementation approaches:
 
 # 2. Conceptual Framework: Defining the Capacities
 
+Phase 2 builds directly on the **Impact Index (Fiscal Relief)** and hybrid spatial methodology defined in Phase 1. The Fiscal Relief Index answers **“Where and how heavily has the public budget been strained by climate‑related disasters?”**. The new Capacity Profiles answer **“How structurally ready is each province to cope, adapt, and transform?”**. Together they support more actionable decisions than a single composite risk score.
+
 To transition DCCE from a "Disaster Management" mindset to a "Resilience" mindset, we establish three distinct tiers of capacity. These will form the sub-indices of the CRI.
+
+>[!important] 
+>Unlike asset‑based vulnerability indices, these capacity tiers are **process‑ and governance‑oriented**: they prioritise mechanisms such as planning, coordination, information flows and institutional agency over static stocks of infrastructure or capital.
 
 ## 2.1 Coping Capacity 
 
@@ -87,13 +94,11 @@ Since creating new data streams is outside the scope/timeline, we will execute a
 We will compile datasets from all relevant line agencies. Key sources include:
 
 - **DOPA (Department of Provincial Administration):** Local Performance Assessment (LPA) data.
-    
 - **DCCE (Dept of Climate Change and Environment):** Sustainable City Assessment indicators.
-    
 - **NESDC:** Socio-economic development data.
-    
 - **Interior Ministry:** Budgetary and planning records.
-    
+- **TEI CRI Pilot and Phase 1 Impact Index:** Use the pilot and refined Fiscal Relief datasets as **context layers** to interpret capacity scores (e.g. provinces with high impact but weak adaptive or transformative capacity), not as capacity indicators themselves.
+
 
 ## Step 2: The "Capacity Tagging" Process
 

@@ -1,5 +1,13 @@
 # RRR utilities fix – recap of changes
 
+> STATUS: Partially superseded
+>
+> For the **current, canonical behavior** of recap and `/rrr` in this repo, prefer:
+> - [`2026-02-18_rrr-exec-via-gitbash-wrapper.md`](psi/memory/learnings/2026-02-18_rrr-exec-via-gitbash-wrapper.md:1)
+> - [`2026-02-18_rrr-recap-rrr-session-wrap-up.md`](psi/memory/learnings/2026-02-18_rrr-recap-rrr-session-wrap-up.md:1)
+>
+> This note remains as historical context for an earlier iteration of the workflow.
+
 ## Context
 
 This learning note is paired with the retrospective:

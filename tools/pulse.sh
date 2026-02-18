@@ -36,7 +36,7 @@ JSON
 fi
 
 python - <<'PY'
-import json, datetime, pathlib, re, os
+import json, datetime, pathlib, re, os, subprocess
 
 root = pathlib.Path(".").resolve()
 p_project = root / "psi" / "data" / "pulse" / "project.json"
@@ -55,11 +55,33 @@ def load(path):
 proj = load(p_project)
 heart = load(p_heart)
 
-# 1. Find the latest retrospective by FILENAME timestamp (YYYY-MM/DD/HH.MM_title.md)
+# 1. Find retrospectives by FILENAME timestamp (YYYY-MM/DD/HH.MM_title.md)
 # This avoids OS modification time issues.
 best_dt = None
 best_path = None
+min_dt = None
+retro_count = 0
+retro_days = set()  # distinct YYYY-MM-DD values that contain >=1 retrospective
 now = datetime.datetime.now().astimezone()
+
+
+def current_branch() -> str:
+    """Best-effort detection of the current git branch.
+
+    This is used to populate the `branches` stats in project.json so that
+    /rrr can surface per-branch activity as described in its SKILL.MD.
+    Fails closed to "unknown" if git is unavailable.
+    """
+
+    try:
+        out = subprocess.check_output(
+            ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+            stderr=subprocess.DEVNULL,
+            text=True,
+        ).strip()
+        return out or "unknown"
+    except Exception:
+        return "unknown"
 
 # Regex to match HH.MM prefix in filename
 name_pat = re.compile(r"^(\d{2})\.(\d{2})_.*\.md$")
@@ -84,14 +106,23 @@ if retro_dir.exists():
                         hh, mm = int(m.group(1)), int(m.group(2))
                         year, month = int(parts[0]), int(parts[1])
                         day = int(d_dir.name)
+
+                        # Track day-level existence (for streak computation)
+                        retro_days.add(datetime.date(year, month, day))
+
+                        # Count sessions by counting retrospective files that match the naming convention
+                        retro_count += 1
                         
                         # Create aware datetime (assuming local system time for file names)
                         # We use 'now.tzinfo' to match the system's current timezone assumption
                         dt = datetime.datetime(year, month, day, hh, mm, 0, tzinfo=now.tzinfo)
-                        
+
                         if best_dt is None or dt > best_dt:
                             best_dt = dt
                             best_path = f
+
+                        if min_dt is None or dt < min_dt:
+                            min_dt = dt
                     except ValueError:
                         continue
 
@@ -103,6 +134,14 @@ else:
     new_last = now.replace(second=0, microsecond=0).isoformat(timespec="seconds")
 
 original_last = heart.get("lastSession")
+
+# 2.5. Compute streak (consecutive days with >=1 retrospective, ending on the latest retro day)
+computed_streak_days = 0
+if best_dt and retro_days:
+    d = best_dt.date()
+    while d in retro_days:
+        computed_streak_days += 1
+        d = d - datetime.timedelta(days=1)
 
 # 3. Update Heartbeat
 heart["lastSession"] = new_last
@@ -119,22 +158,51 @@ elif st is None:
 st["days"] = int(st.get("days", 0) or 0)
 heart["streak"] = st
 
+# Overwrite streak.days with computed value (if any retrospectives exist)
+if best_dt and retro_days:
+    heart["streak"]["days"] = int(computed_streak_days)
+
 # 4. Update Project Stats
 proj.setdefault("projectName", "Knowledge_System")
-proj["updatedAt"] = new_last # Always update 'updatedAt' to now/latest
 
-# Get current total safely
-current_total = proj.get("totalSessions", proj.get("sessions", 0))
-try:
-    current_total = int(current_total or 0)
-except Exception:
-    current_total = 0
+# Initialize schema fields expected by /rrr skill if missing
+proj.setdefault("createdAt", None)
+proj.setdefault("avgMessagesPerSession", 0)
+proj.setdefault("sizes", {})
+proj.setdefault("branches", {})
 
-# KEY FIX: Only increment totalSessions if the timestamp effectively changed
-if original_last != new_last:
-    current_total += 1
+# Set createdAt on first run, keep updatedAt in sync with latest session
+if proj.get("createdAt") in (None, ""):
+    proj["createdAt"] = new_last
 
-proj["totalSessions"] = current_total
+proj["updatedAt"] = new_last  # Always update 'updatedAt' to latest session
+
+# Set totalSessions based on counted retrospectives (deterministic; no dependence on running pulse every session)
+proj["totalSessions"] = int(retro_count or 0)
+
+# createdAt should reflect earliest known retrospective when available
+if min_dt:
+    try:
+        existing_created = proj.get("createdAt")
+        # If missing OR later than earliest retro, correct it.
+        if not existing_created:
+            proj["createdAt"] = min_dt.isoformat(timespec="seconds")
+        else:
+            try:
+                existing_dt = datetime.datetime.fromisoformat(str(existing_created))
+                if existing_dt.tzinfo is None:
+                    existing_dt = existing_dt.replace(tzinfo=now.tzinfo)
+                if existing_dt > min_dt:
+                    proj["createdAt"] = min_dt.isoformat(timespec="seconds")
+            except Exception:
+                proj["createdAt"] = min_dt.isoformat(timespec="seconds")
+    except Exception:
+        pass
+
+# Branch stats: we cannot reconstruct historical branch attribution from retrospectives.
+# Provide a pragmatic value so /recap and /rrr can still surface activity on the *current* branch.
+branch_name = current_branch()
+proj["branches"] = {branch_name: int(retro_count or 0)}
 
 # 5. Save
 with open(p_project, "w", encoding="utf-8") as f:
@@ -143,5 +211,5 @@ with open(p_project, "w", encoding="utf-8") as f:
 with open(p_heart, "w", encoding="utf-8") as f:
     json.dump(heart, f, indent=2)
 
-print(f"Pulse updated. Session: {new_last} (Total: {current_total})")
+print(f"Pulse updated. Session: {new_last} (Total retros: {retro_count})")
 PY

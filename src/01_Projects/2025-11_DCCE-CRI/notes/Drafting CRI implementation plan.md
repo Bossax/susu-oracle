@@ -1,7 +1,6 @@
 ---
 type: ai_output
-status:
-  - archived
+status: archived
 tags:
 capture_date: 2025-10-30
 origin_prompt: draft an implementation plan based on this note
